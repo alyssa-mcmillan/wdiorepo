@@ -29,7 +29,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        'C:/Users/AlyssaMcMillan/work/traction-rec-integrations/gtest/node_modules/.bin/features/Notifications.feature'],
+        '.bin/features/Notifications.feature'],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -79,7 +79,7 @@ exports.config = {
                 "profile.managed_default_content_settings.media_stream":2,
             },
             args: [
-                'user-data-dir=C:\\Users\\AlyssaMcMillan\\work\\traction-rec-integrations\\gtest\\node_modules\\.bin\\features',
+                '.bin\\features',
                 'profile-directory=Profile\ 11'
             ]
         },
