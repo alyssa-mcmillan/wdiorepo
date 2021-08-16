@@ -1,0 +1,39 @@
+{
+  "name": "dummytractionwdiorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wdio.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "wdio:docker": "docker build -t dummyrepo -f ./test/Dockerfile .; docker run --rm --mount type=bind,source=$(pwd),target=/repo dummyrepo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tractionsteve/dummyTractionWdioRepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tractionsteve/dummyTractionWdioRepo/issues"
+  },
+  "homepage": "https://github.com/tractionsteve/dummyTractionWdioRepo#readme",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^7.7.0",
+    "@wdio/cli": "^7.7.2",
+    "@wdio/junit-reporter": "^7.7.0",
+    "@wdio/local-runner": "^7.7.2",
+    "@wdio/mocha-framework": "^7.7.2",
+    "@wdio/selenium-standalone-service": "^7.7.0",
+    "@wdio/spec-reporter": "^7.7.0",
+    "@wdio/sync": "^7.7.2",
+    "chromedriver": "^91.0.1",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.27.0",
+    "eslint-plugin-wdio": "^7.4.2",
+    "mocha": "^8.4.0",
+    "prettier": "^2.3.0",
+    "wdio-chromedriver-service": "^7.2.0"
+  }
+}

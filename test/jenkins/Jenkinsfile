@@ -1,0 +1,135 @@
+pipeline {
+    agent any
+    options {
+        ansiColor('xterm')
+    }
+    environment {
+        ORG_ALIAS = "${JOB_NAME}-${BUILD_NUMBER}"
+        IMAGE_NAME = "tsr-core-wdio:${env.BUILD_ID}"
+    }
+    stages {
+        stage('Setting Job Params') {
+            steps {
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    script {
+                        properties ([
+                            parameters (
+                                [
+                                    string (
+                                        name: 'BRANCH',
+                                        defaultValue: '',
+                                        description: 'The branch of tsr-core whose tests you want to run',
+                                        trim: true
+                                    ),
+                                    string (
+                                        name: 'TEST_PLAN_NAME',
+                                        defaultValue: '',
+                                        description: '[optional] The full Summary (title) of the Test Plan ticket whose tests you want Jenkins to run.',
+                                        trim: true
+                                    ),
+                                    booleanParam(
+                                        name: 'JIRA_REPORTING_ENABLED',
+                                        defaultValue: false,
+                                        description: 'We will only run the "Reporting results to Jira" stage of this pipeline if this param is set to true, otherwise we skip it'
+                                    ),
+                                    string (
+                                        name: 'TEST_EXECUTION_KEY',
+                                        defaultValue: '',
+                                        description: '[required only if reporting enabled] The Jira issue key (e.g. "TSRQA-123") of the Test Execution ticket to which Jenkins will report results of this test run.',
+                                        trim: true
+                                    )
+                                ]
+                            )
+                        ])
+                    }
+                }
+            }
+        }
+        stage('Preparing Docker Container') {
+            steps {
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    withCredentials([
+                        // Credential: server.key (Connected App JWT Key for use by jenkins traction rec user)
+                        file(credentialsId: 'fbe2965d-3d3f-41ef-a40e-5fdffd974552', variable: 'keyfile')
+                    ]) {
+                        script {
+                            BUILD_STATUS = sh script: "cp " + keyfile + " ${WORKSPACE} -f && docker build" +
+                                " --build-arg keyfile=" + keyfile +
+                                " --build-arg USER_ID=\$(id -u ${USER})" +
+                                " --build-arg GROUP_ID=\$(id -g ${USER})" +
+                                " -t ${IMAGE_NAME}" +
+                                " -f ./test/jenkins/Dockerfile .", returnStatus: true
+                            if (BUILD_STATUS != 0) {
+                                throw new Exception("Build failed with status "+BUILD_STATUS+", see the log above for details.")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        stage('Deploying Scratch Org & Running Tests') {
+            when { expression { BUILD_STATUS == 0 } }
+            steps {
+                withCredentials([
+                    // Credential: Consumer Key for Rec Jenkins Connected App
+                    string(credentialsId: 'f32025d8-6fc1-4591-b2eb-1835612ee7b2', variable: 'consumerkey'),
+                    // Xray client credentials
+                    usernamePassword(credentialsId: '06cff3f9-8d4b-4068-813b-2c3ad0fd130c', usernameVariable: 'XRAY_CLIENT_ID', passwordVariable: 'XRAY_CLIENT_SECRET'),
+                    // Jira credentials
+                    usernameColonPassword(credentialsId: 'bee25994-24e9-42e0-a1a0-a471fef286b4', variable: 'JIRA_BASIC_AUTH_STR')
+                ]) {
+                    catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                        script {
+                            bitbucketStatusNotify(buildState: 'INPROGRESS')
+                            def testPlan = ""
+                            if (params.TEST_PLAN_NAME != null) {
+                                testPlan = "--env TEST_PLAN_NAME='${params.TEST_PLAN_NAME}' "
+                            }
+                            res = sh script: "docker run --rm " +
+                                "--mount type=bind,source=\$(pwd),target=/home/jenkins " +
+                                testPlan +
+                                "--env JIRA_REPORTING_ENABLED=${params.JIRA_REPORTING_ENABLED} " +
+                                "--env TEST_EXECUTION_KEY=${params.TEST_EXECUTION_KEY} " +
+                                "--env XRAY_CLIENT_ID=" + XRAY_CLIENT_ID + " " +
+                                "--env XRAY_CLIENT_SECRET=" + XRAY_CLIENT_SECRET + " " +
+                                "--env JIRA_BASIC_AUTH_STR=" + JIRA_BASIC_AUTH_STR + " " +
+                                "--env ORG_ALIAS=${ORG_ALIAS} " +
+                                "--env consumerkey=" + consumerkey + " " +
+                                "--user \$(id -u ${USER}):\$(id -g ${USER}) " +
+                                "${IMAGE_NAME}", returnStatus: true
+                            if (res != 0) {
+                                bitbucketStatusNotify(buildState: 'FAILED')
+                                error('Tests failed.')
+                            } else {
+                                bitbucketStatusNotify(buildState: 'SUCCESSFUL')
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        stage('Reporting results to Jira') {
+            when { expression { BUILD_STATUS == 0 && params.JIRA_REPORTING_ENABLED == true } }
+            steps {
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    script {
+                        GIT_COMMIT = sh(returnStdout: true, script: 'git rev-parse HEAD')
+                    }
+                    step (
+                        [
+                            // docs: https://www.jenkins.io/doc/pipeline/steps/xray-connector/
+                            $class: 'XrayImportBuilder',
+                            serverInstance: '0dab6d47-c636-490b-b2e7-4055c73937ac',
+                            endpointName: '/junit',
+                            projectKey: 'TSRQA',
+                            importFilePath: 'test/reports/junit/*.xml',
+                            testExecKey: params.TEST_EXECUTION_KEY,
+                            revision: "Jenkins job \"${JOB_NAME}\" build #${BUILD_NUMBER}, git commit ${GIT_COMMIT}",
+                            importToSameExecution: 'true',
+                        ]
+                    )
+                }
+            }
+        }
+    }
+}
