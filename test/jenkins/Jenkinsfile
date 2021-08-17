@@ -46,7 +46,6 @@ pipeline {
                             bitbucketStatusNotify(buildState: 'INPROGRESS')
                             res = sh script: "docker run --rm " +
                                 "--mount type=bind,source=\$(pwd),target=/home/jenkins " +
-                                testPlan +
                                 "--env JIRA_REPORTING_ENABLED=${params.JIRA_REPORTING_ENABLED} " +
                                 "--env TEST_EXECUTION_KEY=${params.TEST_EXECUTION_KEY} " +
                                 "--env XRAY_CLIENT_ID=" + XRAY_CLIENT_ID + " " +
