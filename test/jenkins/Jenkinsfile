@@ -8,18 +8,6 @@ pipeline {
         IMAGE_NAME = "tsr-core-wdio:${env.BUILD_ID}"
     }
     stages {
-        stage('Setting Job Params') {
-            steps {
-                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                    script {
-                        properties ([
-                           properties([])
-                            )
-                        ])
-                    }
-                }
-            }
-        }
         stage('Preparing Docker Container') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
@@ -67,11 +55,13 @@ pipeline {
                                 "--env ORG_ALIAS=${ORG_ALIAS} " +
                                 "--env consumerkey=" + consumerkey + " " +
                                 "--user \$(id -u ${USER}):\$(id -g ${USER}) " +6
-                                "${IMAGE_NAME}", returnStatus: true
+                                "${IMAGE_NAME}"
+                                returnStatus: true
                             if (res != 0) {
                                 bitbucketStatusNotify(buildState: 'FAILED')
                                 error('Tests failed.')
-                            } else {
+                            } 
+                            else {
                                 bitbucketStatusNotify(buildState: 'SUCCESSFUL')
                             }
                         }
