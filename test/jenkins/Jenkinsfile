@@ -55,7 +55,8 @@ pipeline {
                                 "--env ORG_ALIAS=${ORG_ALIAS} " +
                                 "--env consumerkey=" + consumerkey + " " +
                                 "--user \$(id -u ${USER}):\$(id -g ${USER}) " +6
-                                "${IMAGE_NAME}", returnStatus: true
+                                "${IMAGE_NAME}" 
+                                returnStatus: true
                             if (res != 0) {
                                 bitbucketStatusNotify(buildState: 'FAILED')
                                 error('Tests failed.')
