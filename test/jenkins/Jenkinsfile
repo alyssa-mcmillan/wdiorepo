@@ -8,43 +8,6 @@ pipeline {
         IMAGE_NAME = "tsr-core-wdio:${env.BUILD_ID}"
     }
     stages {
-        stage('Setting Job Params') {
-            steps {
-                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                    script {
-                        properties ([
-                            parameters (
-                                [
-                                    string (
-                                        name: 'BRANCH',
-                                        defaultValue: '',
-                                        description: 'The branch of tsr-core whose tests you want to run',
-                                        trim: true
-                                    ),
-                                    string (
-                                        name: 'TEST_PLAN_NAME',
-                                        defaultValue: '',
-                                        description: '[optional] The full Summary (title) of the Test Plan ticket whose tests you want Jenkins to run.',
-                                        trim: true
-                                    ),
-                                    booleanParam(
-                                        name: 'JIRA_REPORTING_ENABLED',
-                                        defaultValue: false,
-                                        description: 'We will only run the "Reporting results to Jira" stage of this pipeline if this param is set to true, otherwise we skip it'
-                                    ),
-                                    string (
-                                        name: 'TEST_EXECUTION_KEY',
-                                        defaultValue: '',
-                                        description: '[required only if reporting enabled] The Jira issue key (e.g. "TSRQA-123") of the Test Execution ticket to which Jenkins will report results of this test run.',
-                                        trim: true
-                                    )
-                                ]
-                            )
-                        ])
-                    }
-                }
-            }
-        }
         stage('Preparing Docker Container') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
