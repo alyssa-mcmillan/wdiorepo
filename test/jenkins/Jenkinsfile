@@ -8,18 +8,6 @@ pipeline {
         IMAGE_NAME = "tsr-core-wdio:${env.BUILD_ID}"
     }
     stages {
-        stage('Setting Job Params') {
-            steps {
-                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                    script {
-                        properties ([
-                           properties([])
-                            )
-                        ])
-                    }
-                }
-            }
-        }
         stage('Preparing Docker Container') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
