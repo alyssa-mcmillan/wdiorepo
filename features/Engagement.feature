@@ -1,8 +1,5 @@
 Feature: Engagement Stats
 
-Background: login
-    Given user is logged in 
-
 Scenario Outline: 
     Given <playertype> :: user is on event page
     When <playertype> :: user presses play

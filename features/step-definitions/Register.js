@@ -1,12 +1,12 @@
 const { Given, When, Then, After, AfterAll, BeforeAll } = require('@cucumber/cucumber');
 const { find } = require('lodash');
 const assert = require('assert');
-const BasePage = require('C:/Users/AlyssaMcMillan/work/traction-rec-integrations/gtest/node_modules/.bin/features/pageobjects/page.js');
-const Home = require('.bin/features/pageobjects/Home');
-const Login = require('C:/Users/AlyssaMcMillan/work/traction-rec-integrations/gtest/node_modules/.bin/features/pageobjects/sfloginpage.js');
-const NamespaceLogin = require('C:/Users/AlyssaMcMillan/work/traction-rec-integrations/gtest/node_modules/.bin/features/pageobjects/customlogin.js');
-const Parent = require('.bin/features/pageobjects/Parent');
-const Community = require('.bin/features/pageobjects/Community');
+const BasePage = require('features/pageobjects/page.js');
+const Home = require('features/pageobjects/Home');
+const Login = require('features/pageobjects/sfloginpage.js');
+const NamespaceLogin = require('features/pageobjects/customlogin.js');
+const Parent = require('features/pageobjects/Parent');
+const Community = require('features/pageobjects/Community');
 const { homedir } = require('os');
 
 ////////////////////

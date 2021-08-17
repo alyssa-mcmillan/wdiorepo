@@ -1,8 +1,5 @@
 Feature: Notifications
 
-Background: login
-    Given user is logged in 
-
 Scenario Outline:
     Given <notificationtype> :: events are created
     When <notificationtype> :: user opens homepage

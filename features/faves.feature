@@ -1,8 +1,5 @@
 Feature: favorite an event
 
-Background: login
-    Given user is logged in 
-
 Scenario Outline: <component> <Page> <event_type> <type> <> 
     Given <component> <Page> <event_type> ::: url is opened 
     When <component> <Page> <event_type> ::: user <type>

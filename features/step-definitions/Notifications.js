@@ -1,15 +1,15 @@
 const { Given, When, Then, After, AfterAll, BeforeAll } = require('@cucumber/cucumber');
 const { find } = require('lodash');
 const assert = require('assert');
-const BasePage = require('.bin/features/pageobjects/page.js');
-const Home = require('.bin/features/pageobjects/Home');
-const Login = require('.bin/features/pageobjects/sfloginpage.js');
-const NamespaceLogin = require('.bin/features/pageobjects/customlogin.js');
-const Parent = require('.bin/features/pageobjects/Parent');
-const Community = require('.bin/features/pageobjects/Community');
-const ParentEvent = require('.bin/features/pageobjects/ParentEvent');
-const CommunityEvent = require('.bin/features/pageobjects/CommunityEvent');
-const AdminHome = require('.bin/features/pageobjects/AdminHome');
+const BasePage = require('features/pageobjects/page.js');
+const Home = require('features/pageobjects/Home');
+const Login = require('features/pageobjects/sfloginpage.js');
+const NamespaceLogin = require('features/pageobjects/customlogin.js');
+const Parent = require('features/pageobjects/Parent');
+const Community = require('features/pageobjects/Community');
+const ParentEvent = require('features/pageobjects/ParentEvent');
+const CommunityEvent = require('features/pageobjects/CommunityEvent');
+const AdminHome = require('features/pageobjects/AdminHome');
 const { pathToFileURL } = require('url');
 
 const jsforce = require('jsforce');

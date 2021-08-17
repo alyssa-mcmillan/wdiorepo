@@ -1,8 +1,5 @@
 Feature: New Events
 
-Background: login
-    Given user is logged in 
-
 Scenario Outline: 
     Given <event_type> <component> ::: user is on record page
     When <event_type> <component> ::: user clicks new

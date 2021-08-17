@@ -1,5 +1,5 @@
 const { parseExpectedArgs } = require('commander');
-const Page = require('C:\\Users\\AlyssaMcMillan\\work\\traction-rec-integrations\\gtest\\node_modules\\.bin\\features\\pageobjects\\page.js')
+const Page = require('features\\pageobjects\\page.js')
 
     class NamespaceLogin extends Page {
 
