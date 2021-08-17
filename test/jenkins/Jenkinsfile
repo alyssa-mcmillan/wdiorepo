@@ -44,8 +44,12 @@ pipeline {
                     catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                         script {
                             bitbucketStatusNotify(buildState: 'INPROGRESS')
+                            def testPlan = ""
+                            if (params.TEST_PLAN_NAME != null) {
+                                testPlan = "--env TEST_PLAN_NAME='${params.TEST_PLAN_NAME}' "
+                            }
                             res = sh script: "docker run --rm " +
-                                "--mount type=bind,source=\$(pwd),target=/home/jenkins " +
+                                "--mount type=bind,source=\$(pwd),target=/home/jenkins " + testPlan +
                                 "--env JIRA_REPORTING_ENABLED=${params.JIRA_REPORTING_ENABLED} " +
                                 "--env TEST_EXECUTION_KEY=${params.TEST_EXECUTION_KEY} " +
                                 "--env XRAY_CLIENT_ID=" + XRAY_CLIENT_ID + " " +
