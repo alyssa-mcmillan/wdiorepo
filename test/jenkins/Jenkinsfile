@@ -49,7 +49,7 @@ pipeline {
                                 testPlan = "--env TEST_PLAN_NAME='${params.TEST_PLAN_NAME}' "
                             }
                             res = sh script: "docker run --rm " +
-                                "--mount type=bind,source=\$(pwd),target=/home/jenkins/jenkins/workspace/agt " +
+                                "--mount type=bind,source=\$(pwd),target=JENKINS_HOME\workspace/atp " +
                                 testPlan +
                                 "--env JIRA_REPORTING_ENABLED=${params.JIRA_REPORTING_ENABLED} " +
                                 "--env TEST_EXECUTION_KEY=${params.TEST_EXECUTION_KEY} " +
