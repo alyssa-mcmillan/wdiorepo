@@ -8,6 +8,43 @@ pipeline {
         IMAGE_NAME = "tsr-core-wdio:${env.BUILD_ID}"
     }
     stages {
+        stage('Setting Job Params') {
+            steps {
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    script {
+                        properties ([
+                            parameters (
+                                [
+                                    string (
+                                        name: 'BRANCH',
+                                        defaultValue: '',
+                                        description: 'The branch of tsr-core whose tests you want to run',
+                                        trim: true
+                                    ),
+                                    string (
+                                        name: 'TEST_PLAN_NAME',
+                                        defaultValue: '',
+                                        description: '[optional] The full Summary (title) of the Test Plan ticket whose tests you want Jenkins to run.',
+                                        trim: true
+                                    ),
+                                    booleanParam(
+                                        name: 'JIRA_REPORTING_ENABLED',
+                                        defaultValue: false,
+                                        description: 'We will only run the "Reporting results to Jira" stage of this pipeline if this param is set to true, otherwise we skip it'
+                                    ),
+                                    string (
+                                        name: 'TEST_EXECUTION_KEY',
+                                        defaultValue: '',
+                                        description: '[required only if reporting enabled] The Jira issue key (e.g. "TSRQA-123") of the Test Execution ticket to which Jenkins will report results of this test run.',
+                                        trim: true
+                                    )
+                                ]
+                            )
+                        ])
+                    }
+                }
+            }
+        }
         stage('Preparing Docker Container') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
@@ -49,7 +86,8 @@ pipeline {
                                 testPlan = "--env TEST_PLAN_NAME='${params.TEST_PLAN_NAME}' "
                             }
                             res = sh script: "docker run --rm " +
-                                "--mount type=bind,source=\$(pwd),target=/home/jenkins " + testPlan +
+                                "--mount type=bind,source=\$(pwd),target=/home/jenkins " +
+                                testPlan +
                                 "--env JIRA_REPORTING_ENABLED=${params.JIRA_REPORTING_ENABLED} " +
                                 "--env TEST_EXECUTION_KEY=${params.TEST_EXECUTION_KEY} " +
                                 "--env XRAY_CLIENT_ID=" + XRAY_CLIENT_ID + " " +
@@ -57,9 +95,8 @@ pipeline {
                                 "--env JIRA_BASIC_AUTH_STR=" + JIRA_BASIC_AUTH_STR + " " +
                                 "--env ORG_ALIAS=${ORG_ALIAS} " +
                                 "--env consumerkey=" + consumerkey + " " +
-                                "--user \$(id -u ${USER}):\$(id -g ${USER}) " +6
-                                "${IMAGE_NAME}" 
-                                returnStatus: true
+                                "--user \$(id -u ${USER}):\$(id -g ${USER}) " +
+                                "${IMAGE_NAME}", returnStatus: true
                             if (res != 0) {
                                 bitbucketStatusNotify(buildState: 'FAILED')
                                 error('Tests failed.')
