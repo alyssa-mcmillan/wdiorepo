@@ -83,10 +83,7 @@ exports.config = {
                 "profile.managed_default_content_settings.geolocation":2,
                 "profile.managed_default_content_settings.media_stream":2,
             },
-            args: [
-                'user-data-dir=C:/Users/AlyssaMcMillan/work/traction-rec-integrations/gtest/node_modules/.bin/features',
-                'profile-directory=Profile\ 11'
-            ]
+            args: ["--headless", "--disable-gpu", "--disable-notifications", "--no-sandbox"],
         },
         
         acceptInsecureCerts: true
