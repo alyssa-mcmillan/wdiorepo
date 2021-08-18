@@ -64,7 +64,7 @@ USER jenkins
 #   else echo "Running entire test repository" && npx wdio ; \
 #   fi \
 #   && sfdx force:org:delete -u "${ORG_ALIAS}" -p
-WORKDIR /home/jenkins/wdiorepo
+WORKDIR /home/jenkins/run
 # [upon docker run] npm installs tsr-core, creates new scratch org, runs tests, & removes scratch org
 CMD npm i \
   && if [ ! -z "$TEST_PLAN_NAME" ] ; \
