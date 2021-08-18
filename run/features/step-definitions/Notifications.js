@@ -12,6 +12,7 @@ const AdminHome = require('./../pageobjects/AdminHome');
 const { pathToFileURL } = require('url');
 
 const jsforce = require('jsforce');
+const fs = require('fs');
 const path = require('path');
 const { compareDocumentPosition } = require('domutils');
 const { formatUndefinedParameterType } = require('@cucumber/cucumber/lib/formatter/helpers/issue_helpers');
