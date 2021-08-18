@@ -44,8 +44,12 @@ pipeline {
                     catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                         script {
                             bitbucketStatusNotify(buildState: 'INPROGRESS')
+                            def testPlan = ""
+                            if (params.TEST_PLAN_NAME != null) {
+                                testPlan = "--env TEST_PLAN_NAME='${params.TEST_PLAN_NAME}' "
+                            }
                             res = sh script: "docker run --rm " +
-                                "--mount type=bind,source=\$(pwd),target=/home/jenkins " +
+                                "--mount type=bind,source=\'$(pwd)',target=\'$(pwd)'" +
                                 testPlan +
                                 "--env JIRA_REPORTING_ENABLED=${params.JIRA_REPORTING_ENABLED} " +
                                 "--env TEST_EXECUTION_KEY=${params.TEST_EXECUTION_KEY} " +
@@ -54,9 +58,14 @@ pipeline {
                                 "--env JIRA_BASIC_AUTH_STR=" + JIRA_BASIC_AUTH_STR + " " +
                                 "--env ORG_ALIAS=${ORG_ALIAS} " +
                                 "--env consumerkey=" + consumerkey + " " +
+<<<<<<< HEAD
                                 "--user \$(id -u ${USER}):\$(id -g ${USER}) " +6
                                 "${IMAGE_NAME}"
                                 returnStatus: true
+=======
+                                "--user \$(id -u ${USER}):\$(id -g ${USER}) " +
+                                "${IMAGE_NAME}", returnStatus: true
+>>>>>>> 07ae6b0ecc119b24fc2ef8170119f008f7836ee7
                             if (res != 0) {
                                 bitbucketStatusNotify(buildState: 'FAILED')
                                 error('Tests failed.')
