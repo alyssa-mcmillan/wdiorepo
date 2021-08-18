@@ -1,12 +1,10 @@
 const { Given, When, Then, After, AfterStep, BeforeAll } = require('@cucumber/cucumber');
 const assert = require('assert');
-const Home = require('features/pageobjects/Home');
-const Login = require('features/pageobjects/sfloginpage.js');
-const NamespaceLogin = require('features/pageobjects/customlogin.js');
-const Parent = require('features/pageobjects/Parent');
-const Community = require('features/pageobjects/Community');
-const { homedir } = require('os');
-
+const Home = require('./features/pageobjects/Home');
+const Login = require('./features/pageobjects/sfloginpage.js');
+const NamespaceLogin = require('./features/pageobjects/customlogin.js');
+const Parent = require('./features/pageobjects/Parent');
+const Community = require('./features/pageobjects/Community');
 
 // BACKGROUND
 
