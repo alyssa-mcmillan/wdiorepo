@@ -76,7 +76,7 @@ exports.config = {
             prefs: {
                 "profile.default_content_setting_values.notifications":2,
                 "profile.managed_default_content_settings.stylesheets":2,
-                "profile.managed_default_content_settings.cookies":2,
+                "profile.managed_default_content_settings.cookies":1,
                 "profile.managed_default_content_settings.javascript":1,
                 "profile.managed_default_content_settings.plugins":1,
                 "profile.managed_default_content_settings.popups":2,
@@ -96,8 +96,8 @@ exports.config = {
     beforeSession(){
         global.rowurl = "https://trialectics.force.com/ato/s/"
         global.tileurl = "https://trialectics.force.com/atotile/s/";
-        // global.globusername = "lemmy@mh.com"
-        global.globusername = "trialectics@tod.com"
+        global.globusername = "lemmy@mh.com"
+        // global.globusername = "trialectics@tod.com"
         // global.globusername = "boobles@tod.com"
         global.globpassword = "Borderline@2020"
     },
