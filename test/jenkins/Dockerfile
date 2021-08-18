@@ -26,7 +26,7 @@ RUN if [ -z "$CHROME_DRIVER_VERSION" ]; \
   && chmod 755 /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION \
   && ln -fs /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION /usr/bin/chromedriver
 
-WORKDIR /home/jenkins/wdiorepo
+WORKDIR /home/jenkins
 
 # create user with the passed IDs of the host machine user
 ARG USER_ID
@@ -64,7 +64,7 @@ USER jenkins
 #   else echo "Running entire test repository" && npx wdio ; \
 #   fi \
 #   && sfdx force:org:delete -u "${ORG_ALIAS}" -p
-
+WORKDIR /home/jenkins/wdiorepo
 # [upon docker run] npm installs tsr-core, creates new scratch org, runs tests, & removes scratch org
 CMD npm i \
   && if [ ! -z "$TEST_PLAN_NAME" ] ; \
