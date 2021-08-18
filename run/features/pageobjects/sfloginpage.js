@@ -1,5 +1,5 @@
 const { parseExpectedArgs } = require('commander');
-const Page = require('.\\..\\pageobjects\\page.js')
+const Page = require('./../pageobjects/page.js')
 
     class Login extends Page {
 

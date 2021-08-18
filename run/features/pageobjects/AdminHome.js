@@ -1,4 +1,4 @@
-const Page = require('.\\..\\pageobjects\\page.js')
+const Page = require('./../pageobjects/page.js')
 
     class AdminHome extends Page {
 

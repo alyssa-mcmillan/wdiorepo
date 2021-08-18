@@ -9,7 +9,7 @@ This module can be imported and called from Step Definitions to access the UI el
 5
 */
 
-const Page = require('.\\..\\pageobjects\\page.js')
+const Page = require('./../pageobjects/page.js')
 
     class Parent extends Page {
 

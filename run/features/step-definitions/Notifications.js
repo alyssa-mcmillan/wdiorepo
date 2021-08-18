@@ -233,7 +233,7 @@ async function addevents(notificationtype){
         description: 'I\'M DEAD!', 
         link: 'https://www.youtube.com/watch?v=wTJm3_n6kuw', 
     }
-    let creds = JSON.parse(fs.readFileSync(path.resolve('C:\\Users\\AlyssaMcMillan\\work\\traction-rec-integrations\\gtest\\node_modules\\.bin\\sfcred.json')).toString());
+    let creds = JSON.parse(fs.readFileSync(path.resolve('sfcred.json')).toString());
     let conn = await new jsforce.Connection({
         instanceUrl: 'https://trialectic-power.my.salesforce.com',
         loginUrl: creds.url
