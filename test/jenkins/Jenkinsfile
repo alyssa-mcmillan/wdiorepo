@@ -58,14 +58,9 @@ pipeline {
                                 "--env JIRA_BASIC_AUTH_STR=" + JIRA_BASIC_AUTH_STR + " " +
                                 "--env ORG_ALIAS=${ORG_ALIAS} " +
                                 "--env consumerkey=" + consumerkey + " " +
-<<<<<<< HEAD
                                 "--user \$(id -u ${USER}):\$(id -g ${USER}) " +6
                                 "${IMAGE_NAME}"
                                 returnStatus: true
-=======
-                                "--user \$(id -u ${USER}):\$(id -g ${USER}) " +
-                                "${IMAGE_NAME}", returnStatus: true
->>>>>>> 07ae6b0ecc119b24fc2ef8170119f008f7836ee7
                             if (res != 0) {
                                 bitbucketStatusNotify(buildState: 'FAILED')
                                 error('Tests failed.')
