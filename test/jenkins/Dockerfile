@@ -26,7 +26,7 @@ RUN if [ -z "$CHROME_DRIVER_VERSION" ]; \
   && chmod 755 /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION \
   && ln -fs /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION /usr/bin/chromedriver
 
-WORKDIR /home/jenkins
+WORKDIR /home/jenkins/wdiorepo
 
 # create user with the passed IDs of the host machine user
 ARG USER_ID
@@ -69,5 +69,5 @@ USER jenkins
 CMD npm i \
   && if [ ! -z "$TEST_PLAN_NAME" ] ; \
   then echo "Running test plan '$TEST_PLAN_NAME'" && npm run test:wdio:plan --plan="$TEST_PLAN_NAME" ; \
-  else echo "Running entire test repository" && npx wdio ./wdiorepo/wdio.conf.js\ ; \
+  else echo "Running entire test repository" && npx wdio; \
   fi
