@@ -69,5 +69,5 @@ USER jenkins
 CMD npm i \
   && if [ ! -z "$TEST_PLAN_NAME" ] ; \
   then echo "Running test plan '$TEST_PLAN_NAME'" && npm run test:wdio:plan --plan="$TEST_PLAN_NAME" ; \
-  else echo "Running entire test repository" && npx wdio ; \
+  else echo "Running entire test repository" && npx wdio ./wdiorepo/wdio.conf.js\ ; \
   fi
