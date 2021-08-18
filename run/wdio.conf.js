@@ -26,12 +26,12 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-    // [__dirname + '\\.\\..\\calendar.feature',
-    // __dirname + '\\.\\..\\Engagement.feature',
-    // __dirname + '\\.\\..\\faves.feature',
-    // __dirname + '\\.\\..\\newevent.feature',
-    // __dirname + '\\.\\..\\register.feature']
-   __dirname + '\\features\\Notifications.feature'    
+    // [__dirname + '/./../calendar.feature',
+    // __dirname + '/./../Engagement.feature',
+    // __dirname + '/./../faves.feature',
+    // __dirname + '/./../newevent.feature',
+    // __dirname + '/./../register.feature']
+   __dirname + '/features/Notifications.feature'    
     
     ],
     
@@ -84,7 +84,7 @@ exports.config = {
                 "profile.managed_default_content_settings.media_stream":2,
             },
             args: [
-                'user-data-dir=C:\\Users\\AlyssaMcMillan\\work\\traction-rec-integrations\\gtest\\node_modules\\.bin\\features',
+                'user-data-dir=C:/Users/AlyssaMcMillan/work/traction-rec-integrations/gtest/node_modules/.bin/features',
                 'profile-directory=Profile\ 11'
             ]
         },
@@ -190,7 +190,7 @@ exports.config = {
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
-        require: [__dirname+'\\features\\step-definitions\\Notifications.js'],
+        require: [__dirname+'/features/step-definitions/Notifications.js'],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
