@@ -1,6 +1,5 @@
 const { Given, When, Then, After, AfterStep, BeforeAll } = require('@cucumber/cucumber');
 const assert = require('assert');
-const BasePage = require('features/pageobjects/page.js');
 const Home = require('features/pageobjects/Home');
 const Login = require('features/pageobjects/sfloginpage.js');
 const NamespaceLogin = require('features/pageobjects/customlogin.js');
