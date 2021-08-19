@@ -15,6 +15,7 @@
     },
     "dependencies": {
         "@wdio/allure-reporter": "^7.10.0",
+        "allure": "0.0.0",
         "fs": "0.0.1-security",
         "jsforce": "^1.10.1"
     }

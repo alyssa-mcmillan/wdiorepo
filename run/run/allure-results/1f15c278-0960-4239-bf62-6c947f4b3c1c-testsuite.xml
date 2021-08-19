@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629395924008' stop='1629395951632'>
+    <name>favorite an event</name>
+    <title>favorite an event</title>
+    <test-cases>
+        <test-case start='1629395934701' status='passed' stop='1629395942832'>
+            <name>Upcoming Tile Community favorites &lt;></name>
+            <title>Upcoming Tile Community favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629395934704' status='passed' stop='1629395940900'>
+                    <name>Given Upcoming Tile Community ::: url is opened</name>
+                    <title>Given Upcoming Tile Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629395940900' status='passed' stop='1629395942597'>
+                    <name>When Upcoming Tile Community ::: user favorites</name>
+                    <title>When Upcoming Tile Community ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629395942833' status='passed' stop='1629395951631'>
+            <name>Upcoming Tile Community unfavorites &lt;></name>
+            <title>Upcoming Tile Community unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629395942834' status='passed' stop='1629395946079'>
+                    <name>Given Upcoming Tile Community ::: url is opened</name>
+                    <title>Given Upcoming Tile Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629395946080' status='passed' stop='1629395951327'>
+                    <name>When Upcoming Tile Community ::: user unfavorites</name>
+                    <title>When Upcoming Tile Community ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -86,9 +86,7 @@ exports.config = {
             args: ["--headless", 
             "--disable-gpu",
             "--disable-notifications",
-            "--no-sandbox", 
-            'user-data-dir=./../run',
-            'profile-directory=Profile\ 11'
+            "--no-sandbox"
             ],
 
         },
@@ -103,10 +101,16 @@ exports.config = {
     beforeSession(){
         global.rowurl = "https://trialectics.force.com/ato/s/"
         global.tileurl = "https://trialectics.force.com/atotile/s/";
-        global.globusername = "lemmy@mh.com"
-        // global.globusername = "trialectics@tod.com"
+        // global.globusername = "lemmy@mh.com"
+        global.globusername = "trialectics@tod.com"
         // global.globusername = "boobles@tod.com"
         global.globpassword = "Borderline@2020"
+    },
+
+    afterTest(test, context, {error, result, duration, passed, retries}){
+        if(error){
+            browser.saveScreenshot('wdiorepo/run/allure-results/ss.png')
+        }
     },
 
     // onPrepare: function (config, capabilities) {
@@ -191,9 +195,10 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec', 
     ['allure', {
-        outputDir: 'allure-results',
+        outputDir: 'run/allure-results',
         disableWebdriverStepsReporting: true,
         disableWebdriverScreenshotsReporting: true,
+        useCucumberStepReporter: true,
     }]],
 
 

@@ -327,3 +327,7 @@ When('{} {} {} ::: user {}', async function recurs (component, Page, event_type,
     }
     
 })
+
+After(async()=>{
+    await browser.saveScreenshot('./run/allure-results/ss.png')
+});

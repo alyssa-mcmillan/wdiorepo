@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629395246412' stop='1629395291407'>
+    <name>favorite an event</name>
+    <title>favorite an event</title>
+    <test-cases>
+        <test-case start='1629395254370' status='broken' stop='1629395273702'>
+            <name>Upcoming Tile Community favorites &lt;></name>
+            <title>Upcoming Tile Community favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629395254373' status='passed' stop='1629395258611'>
+                    <name>Given Upcoming Tile Community ::: url is opened</name>
+                    <title>Given Upcoming Tile Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629395258611' status='broken' stop='1629395273692'>
+                    <name>When Upcoming Tile Community ::: user favorites</name>
+                    <title>When Upcoming Tile Community ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629395273694' status='broken' stop='1629395273702'>
+                    <name></name>
+                    <title></title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: directory (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\allure-results) doesn't exist</message>
+                <stack-trace>Error: directory (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\allure-results) doesn't exist
+                    at Object.assertDirectoryExists (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\index.js:356:15)
+                    at Browser.saveScreenshot (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\commands\browser\saveScreenshot.js:35:13)
+                    at Browser.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:38)
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:332:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629395273707' status='broken' stop='1629395291402'>
+            <name>Upcoming Tile Community unfavorites &lt;></name>
+            <title>Upcoming Tile Community unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629395273708' status='passed' stop='1629395276280'>
+                    <name>Given Upcoming Tile Community ::: url is opened</name>
+                    <title>Given Upcoming Tile Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629395276280' status='broken' stop='1629395291394'>
+                    <name>When Upcoming Tile Community ::: user unfavorites</name>
+                    <title>When Upcoming Tile Community ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629395291395' status='broken' stop='1629395291399'>
+                    <name></name>
+                    <title></title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: directory (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\allure-results) doesn't exist</message>
+                <stack-trace>Error: directory (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\allure-results) doesn't exist
+                    at Object.assertDirectoryExists (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\index.js:356:15)
+                    at Browser.saveScreenshot (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\commands\browser\saveScreenshot.js:35:13)
+                    at Browser.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:38)
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:332:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
