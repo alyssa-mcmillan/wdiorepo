@@ -83,11 +83,13 @@ exports.config = {
                 "profile.managed_default_content_settings.geolocation":2,
                 "profile.managed_default_content_settings.media_stream":2,
             }
-            // args: ["--headless", 
-            // "--disable-gpu",
-            // "--disable-notifications",
-            // "--no-sandbox", 
-            // ],
+            args: ["--headless", 
+            "--disable-gpu",
+            "--disable-notifications",
+            "--no-sandbox", 
+            'user-data-dir=./../run',
+            'profile-directory=Profile\ 11'
+            ],
 
         },
         
