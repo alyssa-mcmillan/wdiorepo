@@ -82,7 +82,7 @@ exports.config = {
                 "profile.managed_default_content_settings.popups":2,
                 "profile.managed_default_content_settings.geolocation":2,
                 "profile.managed_default_content_settings.media_stream":2,
-            }
+            },
             args: ["--headless", 
             "--disable-gpu",
             "--disable-notifications",
