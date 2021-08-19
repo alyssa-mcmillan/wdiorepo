@@ -82,9 +82,13 @@ exports.config = {
                 "profile.managed_default_content_settings.popups":2,
                 "profile.managed_default_content_settings.geolocation":2,
                 "profile.managed_default_content_settings.media_stream":2,
-            },
-            args: ["--headless", "--disable-gpu", "--disable-notifications", "--no-sandbox", 'user-data-dir=/home/jenkins/run/',
-            'profile-directory=Profile\ 11'],
+            }
+            // args: ["--headless", 
+            // "--disable-gpu",
+            // "--disable-notifications",
+            // "--no-sandbox", 
+            // ],
+
         },
         
         acceptInsecureCerts: true
@@ -183,7 +187,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['spec', 
+    ['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+    }]],
 
 
     //
