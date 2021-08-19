@@ -8,8 +8,8 @@ Scenario Outline: <component> <Page> <event_type> <type> <>
         |type|component|event_type|Page|                                        
         |favorites|Upcoming|Community|Tile|
         |unfavorites|Upcoming|Community|Tile|
-        # |favorites|Previous|Community|Tile|
-        # |unfavorites|Previous|Community|Tile|
+        |favorites|Previous|Community|Tile|
+        |unfavorites|Previous|Community|Tile|
         # |favorites|Upcoming|Community|Row|
         # |unfavorites|Upcoming|Community|Row|
         # |favorites|Previous|Community|Row|

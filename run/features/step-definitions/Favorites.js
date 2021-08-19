@@ -5,7 +5,7 @@ const Login = require('./../pageobjects/sfloginpage.js');
 const NamespaceLogin = require('./../pageobjects/customlogin.js');
 const Parent = require('./../pageobjects/Parent');
 const Community = require('./../pageobjects/Community');
-
+let count = 0; 
 // BACKGROUND
 
 BeforeAll(async ()=>{
@@ -328,6 +328,9 @@ When('{} {} {} ::: user {}', async function recurs (component, Page, event_type,
     
 })
 
-After(async()=>{
-    await browser.saveScreenshot('./run/allure-results/ss.png')
+After(async(scenario)=>{
+        console.log('>>>', scenario.status)    
+        let title = count + " - ss.png"
+        await browser.saveScreenshot('./run/allure-results/'+title);
+        count = count + 1;
 });
