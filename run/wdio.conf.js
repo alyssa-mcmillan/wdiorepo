@@ -107,12 +107,6 @@ exports.config = {
         global.globpassword = "Borderline@2020"
     },
 
-    afterTest(test, context, {error, result, duration, passed, retries}){
-        if(error){
-            browser.saveScreenshot('wdiorepo/run/allure-results/ss.png')
-        }
-    },
-
     // onPrepare: function (config, capabilities) {
     //     // make sure download directory exists
     //      if (!fs.existsSync(downloadDir)){
@@ -195,7 +189,7 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec', 
     ['allure', {
-        outputDir: 'run/allure-results',
+        outputDir: './allure-results',
         disableWebdriverStepsReporting: true,
         disableWebdriverScreenshotsReporting: true,
         useCucumberStepReporter: true,

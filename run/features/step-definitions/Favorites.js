@@ -329,8 +329,9 @@ When('{} {} {} ::: user {}', async function recurs (component, Page, event_type,
 })
 
 After(async(scenario)=>{
-        console.log('>>>', scenario.result)    
+    if(scenario.result.status===6){
         let title = count + " - ss.png"
-        await browser.saveScreenshot('./run/allure-results/'+title);
+        await browser.saveScreenshot('./allure-results/'+title);
         count = count + 1;
+    }
 });
