@@ -39,14 +39,14 @@ const Page = require('./../pageobjects/page.js')
         get row_cal_google() { return $('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div/div/c-ah-_-event-row/div/div/div/div/c-ah-_-event-action-menu/c-ah-_-calendar-button/lightning-button-menu/div/div/slot/lightning-menu-item[2]/a');}
         get row_cal_outlook_iOS() {return $('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div/div/c-ah-_-event-row/div/div/div/div/c-ah-_-event-action-menu/c-ah-_-calendar-button/lightning-button-menu/div/div/slot/lightning-menu-item[1]/a');}     
          ///REGISTRATION///
-         get tile_upreg(){return $('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div[2]/div[2]/div/c-ah-_-event-tile/div/div[2]/div/div[2]/c-ah-_-register-button')}
-         get tile_prevreg() {return $('//gather-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/div/c-ah-_-event-tile/div/div[2]/div/div[2]/c-ah-_-register-button')}
-         get row_prevreg() {return $('//gather-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div[2]/div/div[1]/c-ah-_-register-button')}
-         get row_upreg(){return $('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div/div/c-ah-_-event-row/div/div/div/div/c-ah-_-register-button')}
+         get tile_upreg(){return $('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div[2]/div[2]/div/c-ah-_-event-tile/div/div/div/div/c-ah-_-register-button')}
+         get tile_prevreg() {return $('//gather-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/div/c-ah-_-event-tile/div/div/div/div/c-ah-_-register-button')}
+         get row_prevreg() {return $('//gather-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/div/div[1]')}
+         get row_upreg(){return $('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div/div/c-ah-_-event-row/div/div/div/div')}
          get row_prevreg_plural() {return $$('//gather-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div[2]/div/div[1]/c-ah-_-register-button')}
          get row_upreg_plural(){return $$('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div/div/c-ah-_-event-row/div/div/div/div/c-ah-_-register-button')}
 
-         get carousel_parent_regbutton() {return $('//gather-ah_-events-carousel/div/c-ah-_-events-carousel-slide/div/div/div/div/c-ah-_-register-button')}
+         get carousel_parent_regbutton() {return $('//gather-ah_-events-carousel/c-ah-_-events-banner-container/div/c-ah-_-events-banner-slide/div/div/c-ah-_-register-button')}
          get descritpion_parent_regbutton() {return $('//gather-ah_-parent-event-description/div/div/div/c-ah-_-register-button');}
 
          get notification() {return $('//a[contains(@class, "ah-notification-link")]')}
@@ -59,4 +59,3 @@ const Page = require('./../pageobjects/page.js')
     }
 
 module.exports = new Parent();
-

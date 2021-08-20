@@ -1,13 +1,12 @@
 const { Given, When, Then, After, AfterAll, BeforeAll } = require('@cucumber/cucumber');
 const { find } = require('lodash');
 const assert = require('assert');
-const BasePage = require('features/pageobjects/page.js');
-const Home = require('features/pageobjects/Home');
-const Login = require('features/pageobjects/sfloginpage.js');
-const NamespaceLogin = require('features/pageobjects/customlogin.js');
-const Parent = require('features/pageobjects/Parent');
-const Community = require('features/pageobjects/Community');
-const { homedir } = require('os');
+const Home = require('./../pageobjects/Home');
+const Login = require('./../pageobjects/sfloginpage.js');
+const NamespaceLogin = require('./../pageobjects/customlogin.js');
+const Parent = require('./../pageobjects/Parent');
+const Community = require('./../pageobjects/Community');
+let count = 0; 
 
 ////////////////////
 //BEFORE ALL TESTS//
@@ -127,7 +126,7 @@ Given('{} {} {} ::: url is opened', async(component, Page, event_type)=>{
     else if(event_type ==='Related' || event_type === 'PlayerWrapper'){
         console.log('<<<')
         if(Page==='Row'){
-            const row = await Home.row_communityevents; 
+            const row = await Home.row_upcommunityevents; 
             console.log('>>>',row.length)
             for(var i = 0; i < row.length; i++){
                 const isDisplay = await row[i].isDisplayed(); 
@@ -143,7 +142,7 @@ Given('{} {} {} ::: url is opened', async(component, Page, event_type)=>{
             }
         }
         else if(Page==='Tile'){
-            const anchor = await Home.tile_communityevent; 
+            const anchor = await Home.tile_upcommunityevent; 
             await anchor.isClickable(); 
             await anchor.click();
             await browser.pause(3000)
@@ -174,6 +173,7 @@ When('{} {} {} ::: user {} for event', async(component, Page, event_type, type)=
         reg = await Parent.descritpion_parent_regbutton;
     }
     else if(event_type==='Child'){
+        let parentreg 
         if(Page==='Tile'){
             if(component === 'Upcoming'){
                 reg = await Parent.tile_upreg;
@@ -295,7 +295,7 @@ When('{} {} {} ::: user {} for event', async(component, Page, event_type, type)=
 
         else if(Page==='Row'){
             if(event_type==='Community'){
-                const tile = await $$('//gather-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/a/div/div[1][not(contains(text(), "Special Event"))]/ancestor::c-ah-_-event-row/div/div/div[1]/div/c-ah-_-register-button'); 
+                const tile = await $$('//gather-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/a/div/div[1][not(contains(text(), "Special Event"))]'); 
                 console.log('>>>', tile.length)
                 for(var i = 0; i < tile.length; i++){
                     const isDisplay = await tile[i].isDisplayed(); 
@@ -370,3 +370,12 @@ When('{} {} {} ::: user {} for event', async(component, Page, event_type, type)=
 
 })
 
+
+After(async(scenario)=>{
+    console.log('>>>', scenario.pickle.name)
+    if(scenario.result.status===6){
+        let title = scenario.name + ' ' +count + " - ss.png"
+        await browser.saveScreenshot('./allure-results/'+title);
+        count = count + 1;
+    }
+});

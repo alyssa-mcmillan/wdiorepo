@@ -70,7 +70,6 @@ const Page = require('./../pageobjects/page')
             get tile_prevparentbanner() {return $('//gather-ah_-previous-events/c-ah-_-event-pagination/div/div/div/c-ah-_-event-tile/div/div[contains(text(), "Special Event")]');}
             
             get row_upcommunityevents() {return $$('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/a/div/div[1][not(contains(text(), "Special Event"))]/ancestor::c-ah-_-event-row/descendant::c-ah-_-register-button')}; 
-
             get prevnext() {return $('//gather-ah_-previous-events/descendant::button[@name="next"]')}
             get upnext() {return $('//gather-ah_-upcoming-events/descendant::button[@name="next"]')}
 
