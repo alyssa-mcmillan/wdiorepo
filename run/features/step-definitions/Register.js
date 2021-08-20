@@ -2,58 +2,25 @@ const { Given, When, Then, After, AfterAll, BeforeAll } = require('@cucumber/cuc
 const { find } = require('lodash');
 const assert = require('assert');
 const Home = require('./../pageobjects/Home');
-const Login = require('./../pageobjects/sfloginpage.js');
-const NamespaceLogin = require('./../pageobjects/customlogin.js');
 const Parent = require('./../pageobjects/Parent');
 const Community = require('./../pageobjects/Community');
 let count = 0; 
 
-////////////////////
-//BEFORE ALL TESTS//
-////////////////////
+// //////////////
+// //BACKGROUND//
+// /////////////
 
-BeforeAll(async ()=>{
-
-    browser.url('https://calendar.google.com/');
-    const userinput = await $('//*[@id="identifierId"]')
-    var inputdisplayed = await userinput.isDisplayed(); 
-    if(inputdisplayed === true){
-        await userinput.setValue('tractiongatherqa@gmail.com');
-        const usernextbutton = await $('//*[@id="identifierNext"]/div/button');
-        await usernextbutton.click(); 
-        await browser.pause(2000);
-        const passinput = await $('//*[@id="password"]/div[1]/div/div[1]/input');
-        await passinput.setValue('Borderline@2020')
-        const passnextbutton = await $('//*[@id="passwordNext"]/div/button');
-        await passnextbutton.click(); 
-    }
-
-    await Home.open(); 
-    const loginButton = await Home.loginbutton;   
-    await loginButton.isClickable(); 
-    await loginButton.click();
-    assert(expect(browser).toHaveUrlContaining('s/login/'))
-    await Login.changepage(); 
-    assert(expect(browser).toHaveUrlContaining('my.salesforce.com'));
-    await NamespaceLogin.login(); 
-    assert(expect(browser).toHaveUrlContaining('.force.com'));
-})
-
-//////////////
-//BACKGROUND//
-/////////////
-
-Given("user is logged in", async () => {
-    const usericon = await Home.usericon
-    var there = await usericon.isDisplayed()
-    assert(there===true)
-});
+// Given("user is logged in", async () => {
+//     const usericon = await Home.usericon
+//     var there = await usericon.isDisplayed()
+//     assert(there===true)
+// });
 
 /////////
 //STEPS//
 /////////
 
-Given('{} {} {} ::: url is opened', async(component, Page, event_type)=>{
+Given('{} {} {} ::: user is on page', async(component, Page, event_type)=>{
     if(Page==='Row'){
         await browser.url(rowurl)
         await browser.pause(2000);
@@ -374,7 +341,7 @@ When('{} {} {} ::: user {} for event', async(component, Page, event_type, type)=
 After(async(scenario)=>{
     console.log('>>>', scenario.pickle.name)
     if(scenario.result.status===6){
-        let title = scenario.name + ' ' +count + " - ss.png"
+        let title = scenario.pickle.name + ' - ' +count + " - ss.png"
         await browser.saveScreenshot('./allure-results/'+title);
         count = count + 1;
     }

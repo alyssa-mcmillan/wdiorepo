@@ -1,7 +1,7 @@
 Feature: register for event
 
 Scenario Outline: 
-    Given <component> <Page> <event_type> ::: url is opened
+    Given <component> <Page> <event_type> ::: user is on page
     When <component> <Page> <event_type> ::: user <type> for event
 
     Examples:

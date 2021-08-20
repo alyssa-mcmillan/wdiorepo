@@ -1,4 +1,4 @@
-const { Given, When, Then, After, AfterStep, BeforeAll } = require('@cucumber/cucumber');
+const { Given, When, Then, After, AfterStep, BeforeAll} = require('@cucumber/cucumber');
 const assert = require('assert');
 const Home = require('./../pageobjects/Home');
 const Login = require('./../pageobjects/sfloginpage.js');
@@ -10,7 +10,7 @@ let count = 0;
 
 BeforeAll(async ()=>{
     await browser.maximizeWindow()
-    browser.url('https://calendar.google.com/');
+    await browser.url('https://calendar.google.com/');
     const userinput = await $('//*[@id="identifierId"]')
     var inputdisplayed = await userinput.isDisplayed(); 
     if(inputdisplayed === true){
@@ -22,9 +22,9 @@ BeforeAll(async ()=>{
         await passinput.setValue('Borderline@2020')
         const passnextbutton = await $('//*[@id="passwordNext"]/div/button');
         await passnextbutton.click(); 
+        await browser.pause(2000)
     }
-
-    await Home.open(); 
+    await browser.url(tileurl)
     const loginButton = await Home.loginbutton;   
     await loginButton.isClickable(); 
     await loginButton.click();
@@ -32,6 +32,7 @@ BeforeAll(async ()=>{
     await Login.changepage(); 
     assert(expect(browser).toHaveUrlContaining('my.salesforce.com'));
     await NamespaceLogin.login(); 
+    await browser.pause(5000)
     assert(expect(browser).toHaveUrlContaining('.force.com'));
 })
 

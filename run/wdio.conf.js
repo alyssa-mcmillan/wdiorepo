@@ -26,8 +26,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-    [ __dirname + '/features/faves.feature',
-    __dirname + '/features/register.feature']
+         __dirname + '/features/faves.feature'
     ],
     
     // Patterns to exclude.
@@ -77,12 +76,12 @@ exports.config = {
                 "profile.managed_default_content_settings.popups":2,
                 "profile.managed_default_content_settings.geolocation":2,
                 "profile.managed_default_content_settings.media_stream":2,
-            },
-            args: ["--headless", 
-            "--disable-gpu",
-            "--disable-notifications",
-            "--no-sandbox"
-            ],
+            }
+            // args: ["--headless", 
+            // "--disable-gpu",
+            // "--disable-notifications",
+            // "--no-sandbox"
+            // ],
 
         },
         
@@ -96,8 +95,8 @@ exports.config = {
     beforeSession(){
         global.rowurl = "https://trialectics.force.com/ato/s/"
         global.tileurl = "https://trialectics.force.com/atotile/s/";
-        global.globusername = "lemmy@mh.com"
-        // global.globusername = "trialectics@tod.com"
+        // global.globusername = "lemmy@mh.com"
+        global.globusername = "trialectics@tod.com"
         // global.globusername = "boobles@tod.com"
         // global.globusername = "bulge@gather.com"
         global.globpassword = "Borderline@2020"
@@ -196,7 +195,7 @@ exports.config = {
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
-        require: [__dirname+'/features/step-definitions/Register.js', __dirname+'/features/step-definitions/Favorites.js' ],
+        require: [__dirname+'/features/step-definitions/Favorites.js', __dirname+'/features/step-definitions/Register.js'],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
