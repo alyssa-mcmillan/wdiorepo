@@ -26,13 +26,8 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-    // [__dirname + '/./../calendar.feature',
-    // __dirname + '/./../Engagement.feature',
     [ __dirname + '/features/faves.feature',
-    // __dirname + '/./../newevent.feature',
     __dirname + '/features/register.feature']
-//    __dirname + '/features/register.feature'    
-    
     ],
     
     // Patterns to exclude.
@@ -82,12 +77,12 @@ exports.config = {
                 "profile.managed_default_content_settings.popups":2,
                 "profile.managed_default_content_settings.geolocation":2,
                 "profile.managed_default_content_settings.media_stream":2,
-            } 
-            // args: ["--headless", 
-            // "--disable-gpu",
-            // "--disable-notifications",
-            // "--no-sandbox"
-            // ],
+            },
+            args: ["--headless", 
+            "--disable-gpu",
+            "--disable-notifications",
+            "--no-sandbox"
+            ],
 
         },
         
