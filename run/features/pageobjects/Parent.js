@@ -27,8 +27,8 @@ const Page = require('./../pageobjects/page.js')
         ///FAVORITES///
         get tile_prevfavbutton() {return $('//gather-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/div/c-ah-_-event-tile/div/div[1]/c-ah-_-event-action-menu/c-ah-_-favourite-button')}
         get tile_upfavbutton() {return $('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div/div/div/c-ah-_-event-tile/div/div/c-ah-_-event-action-menu/c-ah-_-favourite-button');}
-        get row_prevfavbutton() {return $('//gather-ah_-previous-events/c-ah-_-event-pagination/div/div/c-ah-_-event-row/div/div/div/div/c-ah-_-event-action-menu/c-ah-_-favourite-button');}
-        get row_upfavbutton() {return $('/html/body/div[3]/div[3]/div/div/div[3]/div/div[3]/div/div/div/gather-ah_-upcoming-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row[2]/div/div[2]/div/div[2]/c-ah-_-event-action-menu/c-ah-_-favourite-button');}
+        get row_prevfavbutton() {return $('//gather-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/div/div/c-ah-_-event-action-menu/c-ah-_-favourite-button');}
+        get row_upfavbutton() {return $('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/div/div/c-ah-_-event-action-menu/c-ah-_-favourite-button');}
         ///CALENDAR///
         get tile_calendar() {return $('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div/div/div/c-ah-_-event-tile/div/div/c-ah-_-event-action-menu/c-ah-_-calendar-button/lightning-button-menu');}
         get tile_calendardrop() {return $('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div/div/div/c-ah-_-event-tile/div/div/c-ah-_-event-action-menu/c-ah-_-calendar-button/lightning-button-menu/div/div');}

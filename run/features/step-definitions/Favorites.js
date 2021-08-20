@@ -50,6 +50,7 @@ Given("user is logged in", async () => {
 /////////
 
 Given('{} {} {} ::: url is opened', async(component, Page, event_type)=>{
+    
     if(Page==='Row'){
         await browser.url(rowurl)
         await browser.pause(2000);
@@ -71,7 +72,15 @@ Given('{} {} {} ::: url is opened', async(component, Page, event_type)=>{
     }
     else if(event_type==='Agenda'||event_type==='Child'){
         if(Page==='Row'){
-            const banner = await Home.row_upparentbanner; 
+            let banner = await Home.row_upparentbanner; 
+            let isthere = await banner.isDisplayed(); 
+            while(isthere === false){
+                let next = await Home.upnext; 
+                await next.isClickable(); 
+                await next.click(); 
+                await browser.pause(1000);
+                isthere = await banner.isDisplayed(); 
+            }
             const temp = await banner.$('..');
             const anchor = await temp.$('./ancestor::a')
             await anchor.isClickable(); 
@@ -79,7 +88,15 @@ Given('{} {} {} ::: url is opened', async(component, Page, event_type)=>{
             await browser.pause(4000)
         }
         else if(Page==='Tile'){
-            const banner = await Home.tile_upparentbanner; 
+            let banner = await Home.tile_upparentbanner; 
+            let isthere = await banner.isDisplayed(); 
+           while(isthere ===false){
+                let next = await Home.upnext; 
+                await next.isClickable(); 
+                await next.click(); 
+                await browser.pause(1000);
+                isthere = await banner.isDisplayed(); 
+            }
             let temp = await banner.$('..');
             temp = await temp.$('..');
             const anchor = await temp.$('./descendant::a')
@@ -118,7 +135,7 @@ When('{} {} {} ::: user {}', async function recurs (component, Page, event_type,
         fav = await Community.related_fav;
     }
     else if(event_type==='eventDescription'){
-        fav = await Community.desc_fav;
+        fav = await Community.desc_fav; 
     }
     else if(event_type==='Child'){
         if(Page==='Tile'){
@@ -157,7 +174,7 @@ When('{} {} {} ::: user {}', async function recurs (component, Page, event_type,
             }
             else if(event_type==='Parent'){
                 while(fav===undefined){
-                    let tile = await Home.tile_upparentbanner
+                    let tile = await Home.tile_upparentbanner;
                     let found = await tile.isDisplayed(); 
                     if(found===false){
                         const nextbutton = await Home.upnext; 
@@ -284,7 +301,7 @@ When('{} {} {} ::: user {}', async function recurs (component, Page, event_type,
     if(type==='favorites'){
         let button; 
         if(event_type==="eventDescription"){
-            button = await fav.$('./descendant::button[@id="ah-qa-favourite-btn-64"]');
+            button = await fav.$('./descendant::button[@data-id="ah-watchlist-button"]');
         }
         else{
             button = await fav.$('./descendant::button[@data-gather="favorite-icon-btn"]');
@@ -306,7 +323,7 @@ When('{} {} {} ::: user {}', async function recurs (component, Page, event_type,
     else if(type==='unfavorites'){
         let button; 
         if(event_type==="eventDescription"){
-            button = await fav.$('./descendant::button[@id="ah-qa-favourite-btn-64"]');
+            button = await fav.$('./descendant::button[@data-id="ah-watchlist-button"]');
         }
         else{
             button = await fav.$('./descendant::button[@data-gather="favorite-icon-btn"]');
