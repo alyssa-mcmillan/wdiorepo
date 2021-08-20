@@ -28,9 +28,9 @@ exports.config = {
     specs: [
     // [__dirname + '/./../calendar.feature',
     // __dirname + '/./../Engagement.feature',
-    [ __dirname + '/./../faves.feature',
+    [ __dirname + '/features/faves.feature',
     // __dirname + '/./../newevent.feature',
-    __dirname + '/./../register.feature']
+    __dirname + '/features/register.feature']
 //    __dirname + '/features/register.feature'    
     
     ],
@@ -82,12 +82,12 @@ exports.config = {
                 "profile.managed_default_content_settings.popups":2,
                 "profile.managed_default_content_settings.geolocation":2,
                 "profile.managed_default_content_settings.media_stream":2,
-            }, 
-            args: ["--headless", 
-            "--disable-gpu",
-            "--disable-notifications",
-            "--no-sandbox"
-            ],
+            } 
+            // args: ["--headless", 
+            // "--disable-gpu",
+            // "--disable-notifications",
+            // "--no-sandbox"
+            // ],
 
         },
         
@@ -123,7 +123,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'error',
+    logLevel: 'info',
     //
     // Set specific log levels per logger
     // loggers:
