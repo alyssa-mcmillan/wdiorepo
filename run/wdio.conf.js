@@ -26,7 +26,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-         __dirname + '/features/faves.feature'
+         [__dirname + '/features/faves.feature', __dirname + '/features/register.feature']
     ],
     
     // Patterns to exclude.
