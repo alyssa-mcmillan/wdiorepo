@@ -9,7 +9,7 @@ Scenario Outline: <event_type> <Page> ::: <calendar_type>
     Then <event_type> <Page> ::: drop down shows
     When <event_type> <Page> ::: user selects <calendar_type>
     Then <event_type> <Page> ::: <calendar_type> is downloaded
-    And <event_type> <Page> ::: delete <calendar_type> download
+    # And <event_type> <Page> ::: delete <calendar_type> download
   
     Examples:
         |event_type|Page|calendar_type|

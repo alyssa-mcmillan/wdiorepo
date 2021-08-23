@@ -97,8 +97,8 @@ exports.config = {
         global.tileurl = "https://trialectics.force.com/atotile/s/";
         // global.globusername = "lemmy@mh.com"
         // global.globusername = "trialectics@tod.com"
-        // global.globusername = "boobles@tod.com"
-        global.globusername = "bulge@gather.com"
+        global.globusername = "boobles@tod.com"
+        // global.globusername = "bulge@gather.com"
         global.globpassword = "Borderline@2020"
     },
 
