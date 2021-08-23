@@ -70,5 +70,5 @@ CMD npm i \
   && if [ ! -z "$TEST_PLAN_NAME" ] ; \
   then echo "Running test plan '$TEST_PLAN_NAME'" && npm run test:wdio:plan --plan="$TEST_PLAN_NAME" ; \
   else echo "Running entire test repository" && npx wdio; \
-  rm -r run/features/allure-results ; \
+  rm -r run/allure-results ; \
   fi

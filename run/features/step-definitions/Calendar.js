@@ -1,13 +1,29 @@
 const { Given, When, Then, After, AfterAll, BeforeAll } = require('@cucumber/cucumber');
 const { find } = require('lodash');
 const assert = require('assert');
-const Home = require('.bin\\.\\..\\pageobjects\\Home');
-const Login = require('.bin\\.\\..\\pageobjects\\sfloginpage.js');
-const NamespaceLogin = require('.bin\\.\\..\\pageobjects\\customlogin.js');
-const Parent = require('.bin\\.\\..\\pageobjects\\Parent');
-const Community = require('.bin\\.\\..\\pageobjects\\Community');
+const Home = require('./../pageobjects/Home');
+const Login = require('./../pageobjects/sfloginpage.js');
+const NamespaceLogin = require('./../pageobjects/customlogin.js');
+const Parent = require('./../pageobjects/Parent');
+const Community = require('./../pageobjects/Community');
 const fs = require('fs');
 const glob = require('glob');
+const { exec } = require("child_process");
+const output = exec('ls', {encoding: 'utf-8'});
+
+let count = 0; 
+
+exec("ls -la", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
+});
 ////////////////////
 //BEFORE ALL TESTS//
 ////////////////////
@@ -44,6 +60,7 @@ BeforeAll(async ()=>{
 /////////////
 
 Given("user is logged in", async () => {
+    await browser.url(tileurl);
     const usericon = await Home.usericon
     var there = await usericon.isDisplayed()
     assert(there===true)
@@ -347,15 +364,31 @@ Then('{} {} ::: {} is downloaded', async (event_type, Page, calendar_type) => {
 });
 Then('{} {} ::: delete {} download', (event_type, Page, calendar_type)=>{
     if(calendar_type==='iOS/Outlook'){
-        try{
-            fs.unlinkSync('C:\\Users\\AlyssaMcMillan\\work\\traction-rec-integrations\\gtest\\node_modules\\.bin\\temp\\download.ics');
-            console.log('>>>')
-        }
-        catch(e){
-            console.log(e);
-        }
+
+        const { exec } = require("child_process");
+
+        exec("cd C:/Users/AlyssaMcMillan/Downloads && del /f download*", (error, stdout, stderr) => {
+            if (error) {
+                console.log(`error: ${error.message}`);
+                return;
+            }
+            if (stderr) {
+                console.log(`stderr: ${stderr}`);
+                return;
+            }
+            console.log(`stdout: ${stdout}`);
+        });
     }
 });
+
+After(async(scenario)=>{
+    if(scenario.result.status===6){
+        let title = count + " - ss.png"
+        await browser.saveScreenshot('./allure-results/'+title);
+        count = count + 1;
+    }
+});
+
 
 ///////////////////
 //AFTER ALL TESTS//
@@ -372,7 +405,7 @@ AfterAll(()=>{
         } 
         else {
             for(var i = 0; i < res.length; i++){
-                fs.unlinkSync('C:\\Users\\AlyssaMcMillan\\work\\traction-rec-integrations\\gtest\\node_modules\\.bin\\' + res[i])
+                fs.unlinkSync('C:/Users/AlyssaMcMillan/work/traction-rec-integrations/gtest/node_modules/.bin/' + res[i])
             }
         }
       });
