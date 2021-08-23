@@ -393,23 +393,3 @@ After(async(scenario)=>{
 ///////////////////
 //AFTER ALL TESTS//
 ///////////////////
-
-AfterAll(()=>{
-     
-    var getDirectories = function (callback) {
-        glob('**/*.ics', callback);
-      };
-    getDirectories(function (err, res) {
-        if (err) {
-          console.log('Error', err);
-        } 
-        else {
-            for(var i = 0; i < res.length; i++){
-                fs.unlinkSync('C:/Users/AlyssaMcMillan/work/traction-rec-integrations/gtest/node_modules/.bin/' + res[i])
-            }
-        }
-      });
-
-    
-
-});
