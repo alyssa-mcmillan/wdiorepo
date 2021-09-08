@@ -19,15 +19,15 @@ BeforeAll(async ()=>{
         await usernextbutton.click(); 
         await browser.pause(2000);
         const passinput = await $('//*[@id="password"]/div[1]/div/div[1]/input');
-        await passinput.setValue('Borderline@2020')
+        await passinput.setValue('ConnectionCollection')
         const passnextbutton = await $('//*[@id="passwordNext"]/div/button');
         await passnextbutton.click(); 
         await browser.pause(2000)
     }
     await browser.url(tileurl)
-    const loginButton = await Home.loginbutton;   
-    await loginButton.isClickable(); 
-    await loginButton.click();
+    // const loginButton = await Home.loginbutton;   
+    // await loginButton.isClickable(); 
+    // await loginButton.click();
     assert(expect(browser).toHaveUrlContaining('s/login/'))
     await Login.changepage(); 
     assert(expect(browser).toHaveUrlContaining('my.salesforce.com'));
@@ -72,41 +72,83 @@ Given('{} {} {} ::: url is opened', async(component, Page, event_type)=>{
         }
     }
     else if(event_type==='Agenda'||event_type==='Child'){
-        if(Page==='Row'){
-            let banner = await Home.row_upparentbanner; 
-            let isthere = await banner.isDisplayed(); 
-            while(isthere === false){
-                let next = await Home.upnext; 
-                await next.isClickable(); 
-                await next.click(); 
-                await browser.pause(1000);
-                isthere = await banner.isDisplayed(); 
+        if(component==='Upcoming'){
+            if(Page==='Row'){
+                let banner = await Home.row_upparentbanner; 
+                let isthere = await banner.isDisplayed(); 
+                while(isthere === false){
+                    let next = await Home.upnext; 
+                    await next.isClickable(); 
+                    await next.click(); 
+                    await browser.pause(1000);
+                    isthere = await banner.isDisplayed(); 
+                }
+                const temp = await banner.$('..');
+                const anchor = await temp.$('./ancestor::a')
+                await anchor.isClickable(); 
+                await anchor.click();
+                await browser.pause(4000)
             }
-            const temp = await banner.$('..');
-            const anchor = await temp.$('./ancestor::a')
-            await anchor.isClickable(); 
-            await anchor.click();
-            await browser.pause(4000)
-        }
-        else if(Page==='Tile'){
-            let banner = await Home.tile_upparentbanner; 
-            let isthere = await banner.isDisplayed(); 
-           while(isthere ===false){
-                let next = await Home.upnext; 
-                await next.isClickable(); 
-                await next.click(); 
-                await browser.pause(1000);
-                isthere = await banner.isDisplayed(); 
+            else if(Page==='Tile'){
+                let banner = await Home.tile_upparentbanner; 
+                let isthere = await banner.isDisplayed(); 
+            while(isthere ===false){
+                    let next = await Home.upnext; 
+                    await next.isClickable(); 
+                    await next.click(); 
+                    await browser.pause(1000);
+                    isthere = await banner.isDisplayed(); 
+                }
+                let temp = await banner.$('..');
+                temp = await temp.$('..');
+                const anchor = await temp.$('./descendant::a')
+                await anchor.isClickable(); 
+                await anchor.click();
+                await browser.pause(4000)
             }
-            let temp = await banner.$('..');
-            temp = await temp.$('..');
-            const anchor = await temp.$('./descendant::a')
-            await anchor.isClickable(); 
-            await anchor.click();
-            await browser.pause(4000)
+            assert(expect(browser).toHaveUrlContaining('ah-parent-event'));
         }
-        assert(expect(browser).toHaveUrlContaining('ah-parent-event'));
-        
+        else if(component==='Previous'){
+            let ondemandtab = await Home.ondemandTab; 
+            await browser.pause(1500);
+            await ondemandtab.isClickable();
+            await ondemandtab.click(); 
+            await browser.pause(3000);
+            if(Page==='Row'){
+                let banner = await Home.row_prevparentbanner; 
+                let isthere = await banner.isDisplayed(); 
+                while(isthere === false){
+                    let next = await Home.prevnext; 
+                    await next.isClickable(); 
+                    await next.click(); 
+                    await browser.pause(1000);
+                    isthere = await banner.isDisplayed(); 
+                }
+                const temp = await banner.$('..');
+                const anchor = await temp.$('./ancestor::a')
+                await anchor.isClickable(); 
+                await anchor.click();
+                await browser.pause(4000)
+            }
+            else if(Page==='Tile'){
+                let banner = await Home.tile_prevparentbanner; 
+                let isthere = await banner.isDisplayed(); 
+            while(isthere ===false){
+                    let next = await Home.prevnext; 
+                    await next.isClickable(); 
+                    await next.click(); 
+                    await browser.pause(1000);
+                    isthere = await banner.isDisplayed(); 
+                }
+                let temp = await banner.$('..');
+                temp = await temp.$('..');
+                const anchor = await temp.$('./descendant::a')
+                await anchor.isClickable(); 
+                await anchor.click();
+                await browser.pause(4000)
+            }
+            assert(expect(browser).toHaveUrlContaining('ah-parent-event'));
+        }
 
         if(component==='Previous'){
             const onDemandTab = await Parent.ondemandTab; 
@@ -117,7 +159,7 @@ Given('{} {} {} ::: url is opened', async(component, Page, event_type)=>{
     }  
     else if(event_type ==='Related' || event_type === 'eventDescription'){
         const event = await Home.tile_upcommunityevent; 
-        const anchor = await event.$('./a');
+        const anchor = await event.$('./../a');
         await anchor.isClickable(); 
         await anchor.click(); 
         await browser.pause(4000)
@@ -127,7 +169,6 @@ Given('{} {} {} ::: url is opened', async(component, Page, event_type)=>{
 When('{} {} {} ::: user {}', async function recurs (component, Page, event_type, type){
 
     let fav; 
-    let tile; 
 
     if(event_type==='Agenda'){
         fav = await Parent.agenda_fav;
@@ -316,7 +357,7 @@ When('{} {} {} ::: user {}', async function recurs (component, Page, event_type,
             await browser.pause(1500);
         }
         await fav.click();
-        await browser.pause(1500)
+        await browser.pause(2000)
         datasaved = await button.getAttribute('data-is-saved');
         console.log('>>>', datasaved)
         assert(datasaved==='true');

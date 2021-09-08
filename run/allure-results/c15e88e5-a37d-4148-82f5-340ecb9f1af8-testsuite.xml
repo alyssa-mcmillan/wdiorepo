@@ -1,0 +1,384 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629778569156' stop='1629778754649'>
+    <name>Event Filters</name>
+    <title>Event Filters</title>
+    <test-cases>
+        <test-case start='1629778603571' status='failed' stop='1629778612784'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629778603581' status='passed' stop='1629778607309'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778607310' status='passed' stop='1629778607314'>
+                    <name>Given Community Upcoming eventtype :: user is on page</name>
+                    <title>Given Community Upcoming eventtype :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778607314' status='passed' stop='1629778611728'>
+                    <name>When Community Upcoming eventtype :: user selects filter</name>
+                    <title>When Community Upcoming eventtype :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778611728' status='failed' stop='1629778612784'>
+                    <name>Then Community Upcoming eventtype :: component only displays correct results</name>
+                    <title>Then Community Upcoming eventtype :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:</message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+                
+                  assert(events.length===count)
+                
+                    + expected - actual
+                
+                    -false
+                    +true
+                
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\EventFilter.js:226:9)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629778612792' status='passed' stop='1629778624151'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629778612796' status='passed' stop='1629778616401'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778616401' status='passed' stop='1629778616410'>
+                    <name>Given Community Upcoming host :: user is on page</name>
+                    <title>Given Community Upcoming host :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778616410' status='passed' stop='1629778620801'>
+                    <name>When Community Upcoming host :: user selects filter</name>
+                    <title>When Community Upcoming host :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778620802' status='passed' stop='1629778624146'>
+                    <name>Then Community Upcoming host :: component only displays correct results</name>
+                    <title>Then Community Upcoming host :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629778624159' status='failed' stop='1629778631120'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629778624161' status='passed' stop='1629778627989'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778627990' status='passed' stop='1629778630191'>
+                    <name>Given Community Previous eventtype :: user is on page</name>
+                    <title>Given Community Previous eventtype :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778630191' status='passed' stop='1629778630193'>
+                    <name>When Community Previous eventtype :: user selects filter</name>
+                    <title>When Community Previous eventtype :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778630193' status='failed' stop='1629778631120'>
+                    <name>Then Community Previous eventtype :: component only displays correct results</name>
+                    <title>Then Community Previous eventtype :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:</message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+                
+                  assert(events.length===count)
+                
+                    + expected - actual
+                
+                    -false
+                    +true
+                
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\EventFilter.js:226:9)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629778631123' status='passed' stop='1629778672960'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629778631124' status='passed' stop='1629778663143'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778663143' status='passed' stop='1629778665435'>
+                    <name>Given Community Previous host :: user is on page</name>
+                    <title>Given Community Previous host :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778665435' status='passed' stop='1629778669848'>
+                    <name>When Community Previous host :: user selects filter</name>
+                    <title>When Community Previous host :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778669848' status='passed' stop='1629778672958'>
+                    <name>Then Community Previous host :: component only displays correct results</name>
+                    <title>Then Community Previous host :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629778672961' status='failed' stop='1629778692669'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629778672962' status='passed' stop='1629778677420'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778677420' status='passed' stop='1629778682546'>
+                    <name>Given Child Upcoming eventtype :: user is on page</name>
+                    <title>Given Child Upcoming eventtype :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778682546' status='passed' stop='1629778689120'>
+                    <name>When Child Upcoming eventtype :: user selects filter</name>
+                    <title>When Child Upcoming eventtype :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778689121' status='failed' stop='1629778692669'>
+                    <name>Then Child Upcoming eventtype :: component only displays correct results</name>
+                    <title>Then Child Upcoming eventtype :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:</message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+                
+                  assert(events.length===count)
+                
+                    + expected - actual
+                
+                    -false
+                    +true
+                
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\EventFilter.js:226:9)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629778692672' status='passed' stop='1629778710348'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629778692674' status='passed' stop='1629778696179'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778696179' status='passed' stop='1629778702586'>
+                    <name>Given Child Upcoming host :: user is on page</name>
+                    <title>Given Child Upcoming host :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778702587' status='passed' stop='1629778707625'>
+                    <name>When Child Upcoming host :: user selects filter</name>
+                    <title>When Child Upcoming host :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778707625' status='passed' stop='1629778710345'>
+                    <name>Then Child Upcoming host :: component only displays correct results</name>
+                    <title>Then Child Upcoming host :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629778710349' status='failed' stop='1629778730579'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629778710351' status='passed' stop='1629778714199'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778714199' status='passed' stop='1629778724836'>
+                    <name>Given Child Previous eventtype :: user is on page</name>
+                    <title>Given Child Previous eventtype :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778724837' status='passed' stop='1629778729513'>
+                    <name>When Child Previous eventtype :: user selects filter</name>
+                    <title>When Child Previous eventtype :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778729513' status='failed' stop='1629778730577'>
+                    <name>Then Child Previous eventtype :: component only displays correct results</name>
+                    <title>Then Child Previous eventtype :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:</message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+                
+                  assert(events.length===count)
+                
+                    + expected - actual
+                
+                    -false
+                    +true
+                
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\EventFilter.js:226:9)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629778730585' status='passed' stop='1629778754645'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629778730587' status='passed' stop='1629778737252'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778737253' status='passed' stop='1629778748092'>
+                    <name>Given Child Previous host :: user is on page</name>
+                    <title>Given Child Previous host :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778748092' status='passed' stop='1629778752603'>
+                    <name>When Child Previous host :: user selects filter</name>
+                    <title>When Child Previous host :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629778752603' status='passed' stop='1629778754643'>
+                    <name>Then Child Previous host :: component only displays correct results</name>
+                    <title>Then Child Previous host :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

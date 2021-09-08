@@ -1,0 +1,219 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1630089083794' stop='1630089096657'>
+    <name>Notifications</name>
+    <title>Notifications</title>
+    <test-cases>
+        <test-case start='1630089091667' status='broken' stop='1630089094253'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1630089091677' status='broken' stop='1630089094249'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089094250' status='canceled' stop='1630089094250'>
+                    <name>Given live :: events are created</name>
+                    <title>Given live :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089094250' status='canceled' stop='1630089094251'>
+                    <name>When live :: user opens homepage</name>
+                    <title>When live :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089094251' status='canceled' stop='1630089094251'>
+                    <name>And live :: opens community event</name>
+                    <title>And live :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089094251' status='canceled' stop='1630089094251'>
+                    <name>And live :: opens parent event</name>
+                    <title>And live :: opens parent event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089094251' status='canceled' stop='1630089094252'>
+                    <name>When live :: notification fires</name>
+                    <title>When live :: notification fires</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089094252' status='canceled' stop='1630089094252'>
+                    <name>Then live :: validate is displayed</name>
+                    <title>Then live :: validate is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089094252' status='canceled' stop='1630089094252'>
+                    <name>When live :: user clicks on Notification</name>
+                    <title>When live :: user clicks on Notification</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_NAME_NOT_RESOLVED</message>
+                <stack-trace>unknown error: net::ERR_NAME_NOT_RESOLVED
+                  (Session info: chrome=92.0.4515.159)
+                Backtrace:
+                	Ordinal0 [0x00BD2A33+2501171]
+                	Ordinal0 [0x00B6D1C1+2085313]
+                	Ordinal0 [0x00A71FA8+1056680]
+                	Ordinal0 [0x00A6EBD1+1043409]
+                	Ordinal0 [0x00A64E79+1003129]
+                	Ordinal0 [0x00A65A80+1006208]
+                	Ordinal0 [0x00A650CA+1003722]
+                	Ordinal0 [0x00A647FA+1001466]
+                	Ordinal0 [0x00A6398D+997773]
+                	Ordinal0 [0x00A63C46+998470]
+                	Ordinal0 [0x00A7357A+1062266]
+                	Ordinal0 [0x00AC4E8D+1396365]
+                	Ordinal0 [0x00AB5653+1332819]
+                	Ordinal0 [0x00AC48BC+1394876]
+                	Ordinal0 [0x00AB551B+1332507]
+                	Ordinal0 [0x00A91D74+1187188]
+                	Ordinal0 [0x00A92BD9+1190873]
+                	GetHandleVerifier [0x00D4EFE6+1504438]
+                	GetHandleVerifier [0x00DFDDA5+2220661]
+                	GetHandleVerifier [0x00C55589+481881]
+                	GetHandleVerifier [0x00C54639+477961]
+                	Ordinal0 [0x00B728BD+2107581]
+                	Ordinal0 [0x00B76728+2123560]
+                	Ordinal0 [0x00B76862+2123874]
+                	Ordinal0 [0x00B7FA81+2161281]
+                	BaseThreadInitThunk [0x7729FA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77847A7E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77847A4E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1630089094256' status='broken' stop='1630089096655'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1630089094257' status='broken' stop='1630089096653'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089096653' status='canceled' stop='1630089096653'>
+                    <name>Given recorded :: events are created</name>
+                    <title>Given recorded :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089096653' status='canceled' stop='1630089096653'>
+                    <name>When recorded :: user opens homepage</name>
+                    <title>When recorded :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089096653' status='canceled' stop='1630089096654'>
+                    <name>And recorded :: opens community event</name>
+                    <title>And recorded :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089096654' status='canceled' stop='1630089096654'>
+                    <name>And recorded :: opens parent event</name>
+                    <title>And recorded :: opens parent event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089096654' status='canceled' stop='1630089096654'>
+                    <name>When recorded :: notification fires</name>
+                    <title>When recorded :: notification fires</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089096654' status='canceled' stop='1630089096654'>
+                    <name>Then recorded :: validate is displayed</name>
+                    <title>Then recorded :: validate is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630089096654' status='canceled' stop='1630089096654'>
+                    <name>When recorded :: user clicks on Notification</name>
+                    <title>When recorded :: user clicks on Notification</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_NAME_NOT_RESOLVED</message>
+                <stack-trace>unknown error: net::ERR_NAME_NOT_RESOLVED
+                  (Session info: chrome=92.0.4515.159)
+                Backtrace:
+                	Ordinal0 [0x00BD2A33+2501171]
+                	Ordinal0 [0x00B6D1C1+2085313]
+                	Ordinal0 [0x00A71FA8+1056680]
+                	Ordinal0 [0x00A6EBD1+1043409]
+                	Ordinal0 [0x00A64E79+1003129]
+                	Ordinal0 [0x00A65A80+1006208]
+                	Ordinal0 [0x00A650CA+1003722]
+                	Ordinal0 [0x00A647FA+1001466]
+                	Ordinal0 [0x00A6398D+997773]
+                	Ordinal0 [0x00A63C46+998470]
+                	Ordinal0 [0x00A7357A+1062266]
+                	Ordinal0 [0x00AC4E8D+1396365]
+                	Ordinal0 [0x00AB5653+1332819]
+                	Ordinal0 [0x00AC48BC+1394876]
+                	Ordinal0 [0x00AB551B+1332507]
+                	Ordinal0 [0x00A91D74+1187188]
+                	Ordinal0 [0x00A92BD9+1190873]
+                	GetHandleVerifier [0x00D4EFE6+1504438]
+                	GetHandleVerifier [0x00DFDDA5+2220661]
+                	GetHandleVerifier [0x00C55589+481881]
+                	GetHandleVerifier [0x00C54639+477961]
+                	Ordinal0 [0x00B728BD+2107581]
+                	Ordinal0 [0x00B76728+2123560]
+                	Ordinal0 [0x00B76862+2123874]
+                	Ordinal0 [0x00B7FA81+2161281]
+                	BaseThreadInitThunk [0x7729FA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77847A7E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77847A4E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

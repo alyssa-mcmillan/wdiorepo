@@ -1,0 +1,181 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1630019583905' stop='1630019617339'>
+    <name>Notifications</name>
+    <title>Notifications</title>
+    <test-cases>
+        <test-case start='1630019590832' status='failed' stop='1630019604567'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1630019590837' status='failed' stop='1630019604563'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019604564' status='canceled' stop='1630019604564'>
+                    <name>Given live :: events are created</name>
+                    <title>Given live :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019604564' status='canceled' stop='1630019604565'>
+                    <name>When live :: user opens homepage</name>
+                    <title>When live :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019604565' status='canceled' stop='1630019604565'>
+                    <name>And live :: opens community event</name>
+                    <title>And live :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019604565' status='canceled' stop='1630019604565'>
+                    <name>And live :: opens parent event</name>
+                    <title>And live :: opens parent event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019604565' status='canceled' stop='1630019604565'>
+                    <name>When live :: notification fires</name>
+                    <title>When live :: notification fires</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019604565' status='canceled' stop='1630019604566'>
+                    <name>Then live :: validate is displayed</name>
+                    <title>Then live :: validate is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019604566' status='canceled' stop='1630019604566'>
+                    <name>When live :: user clicks on Notification</name>
+                    <title>When live :: user clicks on Notification</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:</message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+                
+                  assert(there===true)
+                
+                    + expected - actual
+                
+                    -false
+                    +true
+                
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Notifications.js:56:5)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1630019604570' status='failed' stop='1630019617337'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1630019604571' status='failed' stop='1630019617334'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019617335' status='canceled' stop='1630019617335'>
+                    <name>Given recorded :: events are created</name>
+                    <title>Given recorded :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019617335' status='canceled' stop='1630019617335'>
+                    <name>When recorded :: user opens homepage</name>
+                    <title>When recorded :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019617335' status='canceled' stop='1630019617335'>
+                    <name>And recorded :: opens community event</name>
+                    <title>And recorded :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019617335' status='canceled' stop='1630019617335'>
+                    <name>And recorded :: opens parent event</name>
+                    <title>And recorded :: opens parent event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019617336' status='canceled' stop='1630019617336'>
+                    <name>When recorded :: notification fires</name>
+                    <title>When recorded :: notification fires</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019617336' status='canceled' stop='1630019617336'>
+                    <name>Then recorded :: validate is displayed</name>
+                    <title>Then recorded :: validate is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1630019617336' status='canceled' stop='1630019617336'>
+                    <name>When recorded :: user clicks on Notification</name>
+                    <title>When recorded :: user clicks on Notification</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:</message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+                
+                  assert(there===true)
+                
+                    + expected - actual
+                
+                    -false
+                    +true
+                
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Notifications.js:56:5)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

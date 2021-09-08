@@ -1,0 +1,99 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629747343856' stop='1629747407083'>
+    <name>Notifications</name>
+    <title>Notifications</title>
+    <test-cases>
+        <test-case start='1629747358939' status='passed' stop='1629747382745'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629747358943' status='passed' stop='1629747361283'>
+                    <name>Given live :: events are created</name>
+                    <title>Given live :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629747361283' status='passed' stop='1629747365663'>
+                    <name>When live :: user opens homepage</name>
+                    <title>When live :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629747365663' status='passed' stop='1629747379094'>
+                    <name>And live :: opens community event</name>
+                    <title>And live :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629747382746' status='broken' stop='1629747407079'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629747382747' status='passed' stop='1629747383914'>
+                    <name>Given recorded :: events are created</name>
+                    <title>Given recorded :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629747383915' status='passed' stop='1629747384321'>
+                    <name>When recorded :: user opens homepage</name>
+                    <title>When recorded :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629747384322' status='broken' stop='1629747407076'>
+                    <name>And recorded :: opens community event</name>
+                    <title>And recorded :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call $ on element with selector "//tint-ah_-previous-events/c-ah-_-event-pagination/div/div/div/c-ah-_-event-tile/div/div[2][not(contains(text(), "Special Event"))]" because element wasn't found</message>
+                <stack-trace>Error: Can't call $ on element with selector "//tint-ah_-previous-events/c-ah-_-event-pagination/div/div/div/c-ah-_-event-tile/div/div[2][not(contains(text(), "Special Event"))]" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\middlewares.js:19:29)
+                    at Element.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:29)
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\waiting\Notifications.js:91:13)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

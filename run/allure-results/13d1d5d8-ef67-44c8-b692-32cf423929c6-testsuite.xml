@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629925285813' stop='1629925356705'>
+    <name>Notifications</name>
+    <title>Notifications</title>
+    <test-cases>
+        <test-case start='1629925292680' status='passed' stop='1629925325287'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629925292690' status='passed' stop='1629925305038'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629925305038' status='passed' stop='1629925307364'>
+                    <name>Given live :: events are created</name>
+                    <title>Given live :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629925307364' status='passed' stop='1629925308997'>
+                    <name>When live :: user opens homepage</name>
+                    <title>When live :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629925308997' status='passed' stop='1629925321384'>
+                    <name>And live :: opens community event</name>
+                    <title>And live :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629925325289' status='passed' stop='1629925356704'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629925325290' status='passed' stop='1629925337520'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629925337520' status='passed' stop='1629925338699'>
+                    <name>Given recorded :: events are created</name>
+                    <title>Given recorded :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629925338699' status='passed' stop='1629925340253'>
+                    <name>When recorded :: user opens homepage</name>
+                    <title>When recorded :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629925340254' status='passed' stop='1629925352810'>
+                    <name>And recorded :: opens community event</name>
+                    <title>And recorded :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

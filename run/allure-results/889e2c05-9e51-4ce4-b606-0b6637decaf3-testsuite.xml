@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629915732202' stop='1629915800272'>
+    <name>favorite an event</name>
+    <title>favorite an event</title>
+    <test-cases>
+        <test-case start='1629915756855' status='passed' stop='1629915767715'>
+            <name>Upcoming Tile eventDescription favorites &lt;></name>
+            <title>Upcoming Tile eventDescription favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629915756860' status='passed' stop='1629915765929'>
+                    <name>Given Upcoming Tile eventDescription ::: url is opened</name>
+                    <title>Given Upcoming Tile eventDescription ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629915765929' status='passed' stop='1629915767713'>
+                    <name>When Upcoming Tile eventDescription ::: user favorites</name>
+                    <title>When Upcoming Tile eventDescription ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629915767716' status='passed' stop='1629915778698'>
+            <name>Upcoming Tile eventDescription unfavorites &lt;></name>
+            <title>Upcoming Tile eventDescription unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629915767716' status='passed' stop='1629915777006'>
+                    <name>Given Upcoming Tile eventDescription ::: url is opened</name>
+                    <title>Given Upcoming Tile eventDescription ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629915777006' status='passed' stop='1629915778696'>
+                    <name>When Upcoming Tile eventDescription ::: user unfavorites</name>
+                    <title>When Upcoming Tile eventDescription ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629915778699' status='passed' stop='1629915789591'>
+            <name>Upcoming Tile Related favorites &lt;></name>
+            <title>Upcoming Tile Related favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629915778700' status='passed' stop='1629915787915'>
+                    <name>Given Upcoming Tile Related ::: url is opened</name>
+                    <title>Given Upcoming Tile Related ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629915787915' status='passed' stop='1629915789590'>
+                    <name>When Upcoming Tile Related ::: user favorites</name>
+                    <title>When Upcoming Tile Related ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629915789592' status='passed' stop='1629915800270'>
+            <name>Upcoming Tile Related unfavorites &lt;></name>
+            <title>Upcoming Tile Related unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629915789593' status='passed' stop='1629915798513'>
+                    <name>Given Upcoming Tile Related ::: url is opened</name>
+                    <title>Given Upcoming Tile Related ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629915798513' status='passed' stop='1629915800269'>
+                    <name>When Upcoming Tile Related ::: user unfavorites</name>
+                    <title>When Upcoming Tile Related ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -39,7 +39,7 @@ BeforeAll(async ()=>{
         await usernextbutton.click(); 
         await browser.pause(2000);
         const passinput = await $('//*[@id="password"]/div[1]/div/div[1]/input');
-        await passinput.setValue('Borderline@2020')
+        await passinput.setValue('ConnectionCollection')
         const passnextbutton = await $('//*[@id="passwordNext"]/div/button');
         await passnextbutton.click(); 
     }

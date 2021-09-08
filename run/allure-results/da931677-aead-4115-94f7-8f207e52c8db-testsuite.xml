@@ -1,0 +1,913 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629914106054' stop='1629914513749'>
+    <name>favorite an event</name>
+    <title>favorite an event</title>
+    <test-cases>
+        <test-case start='1629914130482' status='failed' stop='1629914136462'>
+            <name>Upcoming Tile Community favorites &lt;></name>
+            <title>Upcoming Tile Community favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914130486' status='passed' stop='1629914134729'>
+                    <name>Given Upcoming Tile Community ::: url is opened</name>
+                    <title>Given Upcoming Tile Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914134730' status='failed' stop='1629914136462'>
+                    <name>When Upcoming Tile Community ::: user favorites</name>
+                    <title>When Upcoming Tile Community ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:</message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+                
+                  assert(datasaved==='true')
+                
+                    + expected - actual
+                
+                    -false
+                    +true
+                
+                    at World.recurs (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:322:9)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629914137831' status='passed' stop='1629914142669'>
+            <name>Upcoming Tile Community unfavorites &lt;></name>
+            <title>Upcoming Tile Community unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914137832' status='passed' stop='1629914140932'>
+                    <name>Given Upcoming Tile Community ::: url is opened</name>
+                    <title>Given Upcoming Tile Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914140932' status='passed' stop='1629914142667'>
+                    <name>When Upcoming Tile Community ::: user unfavorites</name>
+                    <title>When Upcoming Tile Community ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914142670' status='passed' stop='1629914152148'>
+            <name>Previous Tile Community favorites &lt;></name>
+            <title>Previous Tile Community favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914142670' status='passed' stop='1629914150451'>
+                    <name>Given Previous Tile Community ::: url is opened</name>
+                    <title>Given Previous Tile Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914150452' status='passed' stop='1629914152145'>
+                    <name>When Previous Tile Community ::: user favorites</name>
+                    <title>When Previous Tile Community ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914152149' status='passed' stop='1629914161632'>
+            <name>Previous Tile Community unfavorites &lt;></name>
+            <title>Previous Tile Community unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914152151' status='passed' stop='1629914159922'>
+                    <name>Given Previous Tile Community ::: url is opened</name>
+                    <title>Given Previous Tile Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914159922' status='passed' stop='1629914161629'>
+                    <name>When Previous Tile Community ::: user unfavorites</name>
+                    <title>When Previous Tile Community ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914161633' status='passed' stop='1629914168325'>
+            <name>Upcoming Row Community favorites &lt;></name>
+            <title>Upcoming Row Community favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914161634' status='passed' stop='1629914166557'>
+                    <name>Given Upcoming Row Community ::: url is opened</name>
+                    <title>Given Upcoming Row Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914166557' status='passed' stop='1629914168323'>
+                    <name>When Upcoming Row Community ::: user favorites</name>
+                    <title>When Upcoming Row Community ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914168325' status='passed' stop='1629914173198'>
+            <name>Upcoming Row Community unfavorites &lt;></name>
+            <title>Upcoming Row Community unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914168326' status='passed' stop='1629914171546'>
+                    <name>Given Upcoming Row Community ::: url is opened</name>
+                    <title>Given Upcoming Row Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914171546' status='passed' stop='1629914173197'>
+                    <name>When Upcoming Row Community ::: user unfavorites</name>
+                    <title>When Upcoming Row Community ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914173198' status='passed' stop='1629914182681'>
+            <name>Previous Row Community favorites &lt;></name>
+            <title>Previous Row Community favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914173199' status='passed' stop='1629914180933'>
+                    <name>Given Previous Row Community ::: url is opened</name>
+                    <title>Given Previous Row Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914180933' status='passed' stop='1629914182680'>
+                    <name>When Previous Row Community ::: user favorites</name>
+                    <title>When Previous Row Community ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914182682' status='passed' stop='1629914192039'>
+            <name>Previous Row Community unfavorites &lt;></name>
+            <title>Previous Row Community unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914182683' status='passed' stop='1629914190313'>
+                    <name>Given Previous Row Community ::: url is opened</name>
+                    <title>Given Previous Row Community ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914190314' status='passed' stop='1629914192037'>
+                    <name>When Previous Row Community ::: user unfavorites</name>
+                    <title>When Previous Row Community ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914192040' status='passed' stop='1629914197335'>
+            <name>Upcoming Tile Parent favorites &lt;></name>
+            <title>Upcoming Tile Parent favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914192041' status='passed' stop='1629914195619'>
+                    <name>Given Upcoming Tile Parent ::: url is opened</name>
+                    <title>Given Upcoming Tile Parent ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914195619' status='passed' stop='1629914197333'>
+                    <name>When Upcoming Tile Parent ::: user favorites</name>
+                    <title>When Upcoming Tile Parent ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914197336' status='passed' stop='1629914202104'>
+            <name>Upcoming Tile Parent unfavorites &lt;></name>
+            <title>Upcoming Tile Parent unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914197337' status='passed' stop='1629914200407'>
+                    <name>Given Upcoming Tile Parent ::: url is opened</name>
+                    <title>Given Upcoming Tile Parent ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914200407' status='passed' stop='1629914202103'>
+                    <name>When Upcoming Tile Parent ::: user unfavorites</name>
+                    <title>When Upcoming Tile Parent ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914202105' status='passed' stop='1629914212695'>
+            <name>Previous Tile Parent favorites &lt;></name>
+            <title>Previous Tile Parent favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914202106' status='passed' stop='1629914209744'>
+                    <name>Given Previous Tile Parent ::: url is opened</name>
+                    <title>Given Previous Tile Parent ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914209744' status='passed' stop='1629914212693'>
+                    <name>When Previous Tile Parent ::: user favorites</name>
+                    <title>When Previous Tile Parent ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914212696' status='passed' stop='1629914223367'>
+            <name>Previous Tile Parent unfavorites &lt;></name>
+            <title>Previous Tile Parent unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914212696' status='passed' stop='1629914220423'>
+                    <name>Given Previous Tile Parent ::: url is opened</name>
+                    <title>Given Previous Tile Parent ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914220423' status='passed' stop='1629914223366'>
+                    <name>When Previous Tile Parent ::: user unfavorites</name>
+                    <title>When Previous Tile Parent ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914223368' status='passed' stop='1629914228262'>
+            <name>Upcoming Row Parent favorites &lt;></name>
+            <title>Upcoming Row Parent favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914223368' status='passed' stop='1629914226575'>
+                    <name>Given Upcoming Row Parent ::: url is opened</name>
+                    <title>Given Upcoming Row Parent ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914226576' status='passed' stop='1629914228261'>
+                    <name>When Upcoming Row Parent ::: user favorites</name>
+                    <title>When Upcoming Row Parent ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914228263' status='passed' stop='1629914233201'>
+            <name>Upcoming Row Parent unfavorites &lt;></name>
+            <title>Upcoming Row Parent unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914228264' status='passed' stop='1629914231468'>
+                    <name>Given Upcoming Row Parent ::: url is opened</name>
+                    <title>Given Upcoming Row Parent ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914231468' status='passed' stop='1629914233200'>
+                    <name>When Upcoming Row Parent ::: user unfavorites</name>
+                    <title>When Upcoming Row Parent ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914233202' status='passed' stop='1629914243949'>
+            <name>Previous Row Parent favorites &lt;></name>
+            <title>Previous Row Parent favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914233203' status='passed' stop='1629914240945'>
+                    <name>Given Previous Row Parent ::: url is opened</name>
+                    <title>Given Previous Row Parent ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914240945' status='passed' stop='1629914243947'>
+                    <name>When Previous Row Parent ::: user favorites</name>
+                    <title>When Previous Row Parent ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914243950' status='passed' stop='1629914254646'>
+            <name>Previous Row Parent unfavorites &lt;></name>
+            <title>Previous Row Parent unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914243951' status='passed' stop='1629914251675'>
+                    <name>Given Previous Row Parent ::: url is opened</name>
+                    <title>Given Previous Row Parent ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914251675' status='passed' stop='1629914254646'>
+                    <name>When Previous Row Parent ::: user unfavorites</name>
+                    <title>When Previous Row Parent ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914254647' status='passed' stop='1629914266110'>
+            <name>Upcoming Tile Child favorites &lt;></name>
+            <title>Upcoming Tile Child favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914254647' status='passed' stop='1629914263777'>
+                    <name>Given Upcoming Tile Child ::: url is opened</name>
+                    <title>Given Upcoming Tile Child ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914263777' status='passed' stop='1629914266109'>
+                    <name>When Upcoming Tile Child ::: user favorites</name>
+                    <title>When Upcoming Tile Child ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914266110' status='passed' stop='1629914276924'>
+            <name>Upcoming Tile Child unfavorites &lt;></name>
+            <title>Upcoming Tile Child unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914266111' status='passed' stop='1629914275249'>
+                    <name>Given Upcoming Tile Child ::: url is opened</name>
+                    <title>Given Upcoming Tile Child ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914275249' status='passed' stop='1629914276922'>
+                    <name>When Upcoming Tile Child ::: user unfavorites</name>
+                    <title>When Upcoming Tile Child ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914276925' status='broken' stop='1629914303700'>
+            <name>Previous Tile Child favorites &lt;></name>
+            <title>Previous Tile Child favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914276926' status='passed' stop='1629914288643'>
+                    <name>Given Previous Tile Child ::: url is opened</name>
+                    <title>Given Previous Tile Child ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914288643' status='broken' stop='1629914303699'>
+                    <name>When Previous Tile Child ::: user favorites</name>
+                    <title>When Previous Tile Child ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call $ on element with selector "//tint-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/div/c-ah-_-event-tile/div/div[1]/c-ah-_-event-action-menu/c-ah-_-favourite-button" because element wasn't found</message>
+                <stack-trace>Error: Can't call $ on element with selector "//tint-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/div/c-ah-_-event-tile/div/div[1]/c-ah-_-event-action-menu/c-ah-_-favourite-button" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\middlewares.js:19:29)
+                    at Element.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:29)
+                    at World.recurs (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:308:22)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629914304999' status='broken' stop='1629914331855'>
+            <name>Previous Tile Child unfavorites &lt;></name>
+            <title>Previous Tile Child unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914305000' status='passed' stop='1629914316814'>
+                    <name>Given Previous Tile Child ::: url is opened</name>
+                    <title>Given Previous Tile Child ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914316814' status='broken' stop='1629914331854'>
+                    <name>When Previous Tile Child ::: user unfavorites</name>
+                    <title>When Previous Tile Child ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call $ on element with selector "//tint-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/div/c-ah-_-event-tile/div/div[1]/c-ah-_-event-action-menu/c-ah-_-favourite-button" because element wasn't found</message>
+                <stack-trace>Error: Can't call $ on element with selector "//tint-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/div/c-ah-_-event-tile/div/div[1]/c-ah-_-event-action-menu/c-ah-_-favourite-button" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\middlewares.js:19:29)
+                    at Element.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:29)
+                    at World.recurs (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:330:22)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629914333144' status='passed' stop='1629914343956'>
+            <name>Upcoming Row Child favorites &lt;></name>
+            <title>Upcoming Row Child favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914333145' status='passed' stop='1629914342290'>
+                    <name>Given Upcoming Row Child ::: url is opened</name>
+                    <title>Given Upcoming Row Child ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914342291' status='passed' stop='1629914343954'>
+                    <name>When Upcoming Row Child ::: user favorites</name>
+                    <title>When Upcoming Row Child ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914343957' status='passed' stop='1629914354383'>
+            <name>Upcoming Row Child unfavorites &lt;></name>
+            <title>Upcoming Row Child unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914343958' status='passed' stop='1629914352714'>
+                    <name>Given Upcoming Row Child ::: url is opened</name>
+                    <title>Given Upcoming Row Child ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914352714' status='passed' stop='1629914354382'>
+                    <name>When Upcoming Row Child ::: user unfavorites</name>
+                    <title>When Upcoming Row Child ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914354384' status='broken' stop='1629914381941'>
+            <name>Previous Row Child favorites &lt;></name>
+            <title>Previous Row Child favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914354385' status='passed' stop='1629914366891'>
+                    <name>Given Previous Row Child ::: url is opened</name>
+                    <title>Given Previous Row Child ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914366891' status='broken' stop='1629914381940'>
+                    <name>When Previous Row Child ::: user favorites</name>
+                    <title>When Previous Row Child ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call $ on element with selector "//tint-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/div/div/c-ah-_-event-action-menu/c-ah-_-favourite-button" because element wasn't found</message>
+                <stack-trace>Error: Can't call $ on element with selector "//tint-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/div/div/c-ah-_-event-action-menu/c-ah-_-favourite-button" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\middlewares.js:19:29)
+                    at Element.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:29)
+                    at World.recurs (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:308:22)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629914382932' status='broken' stop='1629914410378'>
+            <name>Previous Row Child unfavorites &lt;></name>
+            <title>Previous Row Child unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914382933' status='passed' stop='1629914395338'>
+                    <name>Given Previous Row Child ::: url is opened</name>
+                    <title>Given Previous Row Child ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914395338' status='broken' stop='1629914410377'>
+                    <name>When Previous Row Child ::: user unfavorites</name>
+                    <title>When Previous Row Child ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call $ on element with selector "//tint-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/div/div/c-ah-_-event-action-menu/c-ah-_-favourite-button" because element wasn't found</message>
+                <stack-trace>Error: Can't call $ on element with selector "//tint-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/div/div/c-ah-_-event-action-menu/c-ah-_-favourite-button" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\middlewares.js:19:29)
+                    at Element.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:29)
+                    at World.recurs (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:330:22)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629914411362' status='passed' stop='1629914423187'>
+            <name>Upcoming Tile Agenda favorites &lt;></name>
+            <title>Upcoming Tile Agenda favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914411362' status='passed' stop='1629914421520'>
+                    <name>Given Upcoming Tile Agenda ::: url is opened</name>
+                    <title>Given Upcoming Tile Agenda ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914421520' status='passed' stop='1629914423185'>
+                    <name>When Upcoming Tile Agenda ::: user favorites</name>
+                    <title>When Upcoming Tile Agenda ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914423188' status='passed' stop='1629914435195'>
+            <name>Upcoming Tile Agenda unfavorites &lt;></name>
+            <title>Upcoming Tile Agenda unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914423189' status='passed' stop='1629914433532'>
+                    <name>Given Upcoming Tile Agenda ::: url is opened</name>
+                    <title>Given Upcoming Tile Agenda ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914433532' status='passed' stop='1629914435193'>
+                    <name>When Upcoming Tile Agenda ::: user unfavorites</name>
+                    <title>When Upcoming Tile Agenda ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629914435195' status='broken' stop='1629914453549'>
+            <name>Upcoming Tile eventDescription favorites &lt;></name>
+            <title>Upcoming Tile eventDescription favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914435197' status='broken' stop='1629914453548'>
+                    <name>Given Upcoming Tile eventDescription ::: url is opened</name>
+                    <title>Given Upcoming Tile eventDescription ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914453550' status='canceled' stop='1629914453551'>
+                    <name>When Upcoming Tile eventDescription ::: user favorites</name>
+                    <title>When Upcoming Tile eventDescription ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "./a" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "./a" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\middlewares.js:19:29)
+                    at Element.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:29)
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:122:9)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629914454890' status='broken' stop='1629914473592'>
+            <name>Upcoming Tile eventDescription unfavorites &lt;></name>
+            <title>Upcoming Tile eventDescription unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914454890' status='broken' stop='1629914473591'>
+                    <name>Given Upcoming Tile eventDescription ::: url is opened</name>
+                    <title>Given Upcoming Tile eventDescription ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914473592' status='canceled' stop='1629914473593'>
+                    <name>When Upcoming Tile eventDescription ::: user unfavorites</name>
+                    <title>When Upcoming Tile eventDescription ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "./a" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "./a" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\middlewares.js:19:29)
+                    at Element.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:29)
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:122:9)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629914474742' status='broken' stop='1629914493119'>
+            <name>Upcoming Tile Related favorites &lt;></name>
+            <title>Upcoming Tile Related favorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914474743' status='broken' stop='1629914493118'>
+                    <name>Given Upcoming Tile Related ::: url is opened</name>
+                    <title>Given Upcoming Tile Related ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914493119' status='canceled' stop='1629914493119'>
+                    <name>When Upcoming Tile Related ::: user favorites</name>
+                    <title>When Upcoming Tile Related ::: user favorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "./a" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "./a" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\middlewares.js:19:29)
+                    at Element.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:29)
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:122:9)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629914494315' status='broken' stop='1629914512573'>
+            <name>Upcoming Tile Related unfavorites &lt;></name>
+            <title>Upcoming Tile Related unfavorites &lt;></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629914494316' status='broken' stop='1629914512572'>
+                    <name>Given Upcoming Tile Related ::: url is opened</name>
+                    <title>Given Upcoming Tile Related ::: url is opened</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629914512573' status='canceled' stop='1629914512573'>
+                    <name>When Upcoming Tile Related ::: user unfavorites</name>
+                    <title>When Upcoming Tile Related ::: user unfavorites</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "./a" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "./a" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\webdriverio\build\middlewares.js:19:29)
+                    at Element.wrapCommandFn (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:104:29)
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\Favorites.js:122:9)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

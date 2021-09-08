@@ -341,7 +341,7 @@ When('{} :: user completes video', async(playertype)=>{
     else if(playertype==='mp3'){
         
         let resp = await browser.execute(async()=>{
-            let audioplayer = document.getElementsByTagName('gather-ah_-audio-player')
+            let audioplayer = document.getElementsByTagName('tint-ah_-audio-player')
             audioplayer = audioplayer[0].getElementsByTagName('audio')[0]
             let curtime = await audioplayer.duration
             curtime = curtime-5

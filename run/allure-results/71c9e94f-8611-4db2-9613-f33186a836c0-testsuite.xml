@@ -1,0 +1,167 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629743368124' stop='1629743454734'>
+    <name>Notifications</name>
+    <title>Notifications</title>
+    <test-cases>
+        <test-case start='1629743382534' status='broken' stop='1629743390699'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629743382540' status='passed' stop='1629743384794'>
+                    <name>Given live :: events are created</name>
+                    <title>Given live :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743384794' status='passed' stop='1629743390525'>
+                    <name>When live :: user opens homepage</name>
+                    <title>When live :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743390525' status='broken' stop='1629743390697'>
+                    <name>And live :: opens community event</name>
+                    <title>And live :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743390697' status='canceled' stop='1629743390698'>
+                    <name>And live :: opens parent event</name>
+                    <title>And live :: opens parent event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743390698' status='canceled' stop='1629743390698'>
+                    <name>When live :: notification fires</name>
+                    <title>When live :: notification fires</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743390698' status='canceled' stop='1629743390698'>
+                    <name>Then live :: validate is displayed</name>
+                    <title>Then live :: validate is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743390698' status='canceled' stop='1629743390698'>
+                    <name>When live :: user clicks on Notification</name>
+                    <title>When live :: user clicks on Notification</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable</message>
+                <stack-trace>element not interactable
+                  (Session info: chrome=92.0.4515.159)
+                Backtrace:
+                	Ordinal0 [0x00632A33+2501171]
+                	Ordinal0 [0x005CD1C1+2085313]
+                	Ordinal0 [0x004D1E70+1056368]
+                	Ordinal0 [0x004FD547+1234247]
+                	Ordinal0 [0x004F31B7+1192375]
+                	Ordinal0 [0x00515653+1332819]
+                	Ordinal0 [0x004F2FD6+1191894]
+                	Ordinal0 [0x0051573A+1333050]
+                	Ordinal0 [0x005248BC+1394876]
+                	Ordinal0 [0x0051551B+1332507]
+                	Ordinal0 [0x004F1D74+1187188]
+                	Ordinal0 [0x004F2BD9+1190873]
+                	GetHandleVerifier [0x007AEFE6+1504438]
+                	GetHandleVerifier [0x0085DDA5+2220661]
+                	GetHandleVerifier [0x006B5589+481881]
+                	GetHandleVerifier [0x006B4639+477961]
+                	Ordinal0 [0x005D28BD+2107581]
+                	Ordinal0 [0x005D6728+2123560]
+                	Ordinal0 [0x005D6862+2123874]
+                	Ordinal0 [0x005DFA81+2161281]
+                	BaseThreadInitThunk [0x7729FA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77847A7E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77847A4E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629743390701' status='passed' stop='1629743454732'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629743390702' status='passed' stop='1629743391725'>
+                    <name>Given recorded :: events are created</name>
+                    <title>Given recorded :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743391725' status='passed' stop='1629743393574'>
+                    <name>When recorded :: user opens homepage</name>
+                    <title>When recorded :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743393574' status='passed' stop='1629743407413'>
+                    <name>And recorded :: opens community event</name>
+                    <title>And recorded :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743407413' status='passed' stop='1629743419190'>
+                    <name>And recorded :: opens parent event</name>
+                    <title>And recorded :: opens parent event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743419190' status='passed' stop='1629743424206'>
+                    <name>When recorded :: notification fires</name>
+                    <title>When recorded :: notification fires</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743424206' status='passed' stop='1629743429852'>
+                    <name>Then recorded :: validate is displayed</name>
+                    <title>Then recorded :: validate is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743429853' status='passed' stop='1629743449740'>
+                    <name>When recorded :: user clicks on Notification</name>
+                    <title>When recorded :: user clicks on Notification</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,153 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629743525803' stop='1629743644468'>
+    <name>Notifications</name>
+    <title>Notifications</title>
+    <test-cases>
+        <test-case start='1629743541023' status='passed' stop='1629743631258'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629743541030' status='passed' stop='1629743543699'>
+                    <name>Given live :: events are created</name>
+                    <title>Given live :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743543699' status='passed' stop='1629743549044'>
+                    <name>When live :: user opens homepage</name>
+                    <title>When live :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743549044' status='passed' stop='1629743562516'>
+                    <name>And live :: opens community event</name>
+                    <title>And live :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743562516' status='passed' stop='1629743574535'>
+                    <name>And live :: opens parent event</name>
+                    <title>And live :: opens parent event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743574536' status='passed' stop='1629743584557'>
+                    <name>When live :: notification fires</name>
+                    <title>When live :: notification fires</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743584557' status='passed' stop='1629743589986'>
+                    <name>Then live :: validate is displayed</name>
+                    <title>Then live :: validate is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743589986' status='passed' stop='1629743624959'>
+                    <name>When live :: user clicks on Notification</name>
+                    <title>When live :: user clicks on Notification</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629743631259' status='broken' stop='1629743644463'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629743631260' status='passed' stop='1629743632235'>
+                    <name>Given recorded :: events are created</name>
+                    <title>Given recorded :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743632235' status='passed' stop='1629743634272'>
+                    <name>When recorded :: user opens homepage</name>
+                    <title>When recorded :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743634272' status='broken' stop='1629743644461'>
+                    <name>And recorded :: opens community event</name>
+                    <title>And recorded :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743644461' status='canceled' stop='1629743644462'>
+                    <name>And recorded :: opens parent event</name>
+                    <title>And recorded :: opens parent event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743644462' status='canceled' stop='1629743644462'>
+                    <name>When recorded :: notification fires</name>
+                    <title>When recorded :: notification fires</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743644462' status='canceled' stop='1629743644462'>
+                    <name>Then recorded :: validate is displayed</name>
+                    <title>Then recorded :: validate is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629743644462' status='canceled' stop='1629743644463'>
+                    <name>When recorded :: user clicks on Notification</name>
+                    <title>When recorded :: user clicks on Notification</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>RequestError: read ECONNRESET</message>
+                <stack-trace>RequestError: read ECONNRESET
+                    at ClientRequest.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\got\dist\source\core\index.js:956:111)
+                    at Object.onceWrapper (events.js:483:26)
+                    at ClientRequest.emit (events.js:388:22)
+                    at ClientRequest.emit (domain.js:470:12)
+                    at ClientRequest.origin.emit (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+                    at Socket.socketErrorListener (_http_client.js:475:9)
+                    at Socket.emit (events.js:376:20)
+                    at Socket.emit (domain.js:470:12)
+                    at emitErrorNT (internal/streams/destroy.js:106:8)
+                    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+                    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+                    at TCP.onStreamRead (internal/stream_base_commons.js:209:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

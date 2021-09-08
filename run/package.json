@@ -14,10 +14,15 @@
         "wdio-chromedriver-service": "^7.2.0"
     },
     "dependencies": {
+        "@cucumber/cucumber": "^7.3.1",
         "@wdio/allure-reporter": "^7.10.0",
+        "@wdio/sync": "^7.12.1",
         "allure": "0.0.0",
         "child_process": "^1.0.2",
         "fs": "0.0.1-security",
-        "jsforce": "^1.10.1"
+        "jsforce": "^1.10.1",
+        "json-stringify-cli": "^1.0.1",
+        "stringify-cli": "^1.0.3",
+        "webdriverio": "^7.12.1"
     }
 }

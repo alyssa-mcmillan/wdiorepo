@@ -4,21 +4,46 @@ const assert = require('assert');
 const Home = require('./../pageobjects/Home');
 const Parent = require('./../pageobjects/Parent');
 const Community = require('./../pageobjects/Community');
+const Login = require('./../pageobjects/sfloginpage');
+const NamespaceLogin = require('./../pageobjects/customlogin');
+
+
 let count = 0; 
 
-// //////////////
-// //BACKGROUND//
-// /////////////
+BeforeAll(async ()=>{
+    await browser.maximizeWindow()
+    await browser.url('https://calendar.google.com/');
+    const userinput = await $('//*[@id="identifierId"]')
+    var inputdisplayed = await userinput.isDisplayed(); 
+    if(inputdisplayed === true){
+        await userinput.setValue('tractiongatherqa@gmail.com');
+        const usernextbutton = await $('//*[@id="identifierNext"]/div/button');
+        await usernextbutton.click(); 
+        await browser.pause(2000);
+        const passinput = await $('//*[@id="password"]/div[1]/div/div[1]/input');
+        await passinput.setValue('ConnectionCollection')
+        const passnextbutton = await $('//*[@id="passwordNext"]/div/button');
+        await passnextbutton.click(); 
+        await browser.pause(2000)
+    }
+    await browser.url(tileurl)
+    const loginButton = await Home.loginbutton;   
+    await loginButton.isClickable(); 
+    await loginButton.click();
+    assert(expect(browser).toHaveUrlContaining('s/login/'))
+    await Login.changepage(); 
+    assert(expect(browser).toHaveUrlContaining('my.salesforce.com'));
+    await NamespaceLogin.login(); 
+    await browser.pause(5000)
+    assert(expect(browser).toHaveUrlContaining('.force.com'));
+})
 
-// Given("user is logged in", async () => {
-//     const usericon = await Home.usericon
-//     var there = await usericon.isDisplayed()
-//     assert(there===true)
-// });
-
-/////////
-//STEPS//
-/////////
+Given("user is logged in", async () => {
+    await browser.url(tileurl)
+    const usericon = await Home.usericon;
+    var there = await usericon.isDisplayed()
+    assert(there===true)
+});
 
 Given('{} {} {} ::: user is on page', async(component, Page, event_type)=>{
     if(Page==='Row'){
@@ -203,7 +228,7 @@ When('{} {} {} ::: user {} for event', async(component, Page, event_type, type)=
         }
         else if(Page==='Row'){
             if(event_type==='Community'){
-                const tile = await $$('//gather-ah_-upcoming-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/a/div/div[1][not(contains(text(), "Special Event"))]/ancestor::c-ah-_-event-row/div/div/div[1]/div/c-ah-_-register-button'); 
+                const tile = await $$('//tint-ah_-upcoming-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/a/div/div[1][not(contains(text(), "Special Event"))]/ancestor::c-ah-_-event-row/div/div/div[1]/div/c-ah-_-register-button'); 
                 for(var i = 0; i < tile.length; i++){
                     const isDisplay = await tile[i].isDisplayed(); 
                     if(isDisplay===true){
@@ -262,7 +287,7 @@ When('{} {} {} ::: user {} for event', async(component, Page, event_type, type)=
 
         else if(Page==='Row'){
             if(event_type==='Community'){
-                const tile = await $$('//gather-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/a/div/div[1][not(contains(text(), "Special Event"))]'); 
+                const tile = await $$('//tint-ah_-previous-events/c-ah-_-event-pagination/div[2]/div[2]/c-ah-_-event-row/div/div/a/div/div[1][not(contains(text(), "Special Event"))]'); 
                 console.log('>>>', tile.length)
                 for(var i = 0; i < tile.length; i++){
                     const isDisplay = await tile[i].isDisplayed(); 

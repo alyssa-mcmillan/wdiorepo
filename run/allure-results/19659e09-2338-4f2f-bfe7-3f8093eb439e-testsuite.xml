@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629780889557' stop='1629780941492'>
+    <name>Event Filters</name>
+    <title>Event Filters</title>
+    <test-cases>
+        <test-case start='1629780924989' status='broken' stop='1629780934715'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629780925000' status='passed' stop='1629780928244'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780928244' status='passed' stop='1629780928251'>
+                    <name>Given Community Upcoming eventtype :: user is on page</name>
+                    <title>Given Community Upcoming eventtype :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780928251' status='passed' stop='1629780933062'>
+                    <name>When Community Upcoming eventtype :: user selects filter</name>
+                    <title>When Community Upcoming eventtype :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780933062' status='broken' stop='1629780934713'>
+                    <name>Then Community Upcoming eventtype :: component only displays correct results</name>
+                    <title>Then Community Upcoming eventtype :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: Cannot read property '0' of undefined</message>
+                <stack-trace>TypeError: Cannot read property '0' of undefined
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\EventFilter.js:219:62)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629780934724' status='broken' stop='1629780941487'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629780934726' status='passed' stop='1629780936244'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780936244' status='passed' stop='1629780936251'>
+                    <name>Given Community Upcoming host :: user is on page</name>
+                    <title>Given Community Upcoming host :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780936251' status='passed' stop='1629780940280'>
+                    <name>When Community Upcoming host :: user selects filter</name>
+                    <title>When Community Upcoming host :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780940280' status='broken' stop='1629780941487'>
+                    <name>Then Community Upcoming host :: component only displays correct results</name>
+                    <title>Then Community Upcoming host :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: Cannot read property '0' of undefined</message>
+                <stack-trace>TypeError: Cannot read property '0' of undefined
+                    at World.&lt;anonymous> (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\features\step-definitions\EventFilter.js:219:62)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at World.executeAsync (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\shim.js:285:16)
+                    at World.testFrameworkFnWrapper (C:\Users\AlyssaMcMillan\work\traction-rec-integrations\wdiorepo\run\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

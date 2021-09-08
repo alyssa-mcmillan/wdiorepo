@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629745744614' stop='1629745828455'>
+    <name>Notifications</name>
+    <title>Notifications</title>
+    <test-cases>
+        <test-case start='1629745759402' status='passed' stop='1629745828454'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629745759411' status='passed' stop='1629745761670'>
+                    <name>Given live :: events are created</name>
+                    <title>Given live :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745761670' status='passed' stop='1629745769161'>
+                    <name>When live :: user opens homepage</name>
+                    <title>When live :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745769161' status='passed' stop='1629745781759'>
+                    <name>And live :: opens community event</name>
+                    <title>And live :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745781759' status='passed' stop='1629745793619'>
+                    <name>And live :: opens parent event</name>
+                    <title>And live :: opens parent event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745793619' status='passed' stop='1629745803645'>
+                    <name>When live :: notification fires</name>
+                    <title>When live :: notification fires</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745803646' status='passed' stop='1629745809050'>
+                    <name>Then live :: validate is displayed</name>
+                    <title>Then live :: validate is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745809050' status='passed' stop='1629745824092'>
+                    <name>When live :: user clicks on Notification</name>
+                    <title>When live :: user clicks on Notification</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

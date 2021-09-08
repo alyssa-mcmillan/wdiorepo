@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629746478051' stop='1629746503371'>
+    <name>Notifications</name>
+    <title>Notifications</title>
+    <test-cases>
+        <test-case start='1629746493740' status='broken' stop='1629746503368'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629746493748' status='passed' stop='1629746496311'>
+                    <name>Given &lt;notificationtype> :: events are created</name>
+                    <title>Given &lt;notificationtype> :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629746496312' status='passed' stop='1629746503353'>
+                    <name>When &lt;notificationtype> :: user opens homepage</name>
+                    <title>When &lt;notificationtype> :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Data Table' source='2fe40b90-90af-45a4-885c-29582e04b26d-attachment.csv' type='text/csv' size='31'/>
+            </attachments>
+            <failure>
+                <message>function has 1 arguments, should have 2 (if synchronous or returning a promise) or 3 (if accepting a callback)</message>
+                <stack-trace>function has 1 arguments, should have 2 (if synchronous or returning a promise) or 3 (if accepting a callback)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

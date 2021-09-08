@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629745856467' stop='1629745940265'>
+    <name>Notifications</name>
+    <title>Notifications</title>
+    <test-cases>
+        <test-case start='1629745871777' status='passed' stop='1629745940265'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629745871782' status='passed' stop='1629745872853'>
+                    <name>Given recorded :: events are created</name>
+                    <title>Given recorded :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745872853' status='passed' stop='1629745880140'>
+                    <name>When recorded :: user opens homepage</name>
+                    <title>When recorded :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745880141' status='passed' stop='1629745893517'>
+                    <name>And recorded :: opens community event</name>
+                    <title>And recorded :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745893518' status='passed' stop='1629745905376'>
+                    <name>And recorded :: opens parent event</name>
+                    <title>And recorded :: opens parent event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745905377' status='passed' stop='1629745915400'>
+                    <name>When recorded :: notification fires</name>
+                    <title>When recorded :: notification fires</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745915400' status='passed' stop='1629745920878'>
+                    <name>Then recorded :: validate is displayed</name>
+                    <title>Then recorded :: validate is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629745920878' status='passed' stop='1629745935984'>
+                    <name>When recorded :: user clicks on Notification</name>
+                    <title>When recorded :: user clicks on Notification</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

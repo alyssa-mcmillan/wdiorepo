@@ -1,0 +1,193 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629832105542' stop='1629832154371'>
+    <name>Event Filters</name>
+    <title>Event Filters</title>
+    <test-cases>
+        <test-case start='1629832133215' status='passed' stop='1629832138326'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629832133219' status='passed' stop='1629832134788'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832134788' status='passed' stop='1629832134790'>
+                    <name>Given Parent Upcoming host :: user is on page</name>
+                    <title>Given Parent Upcoming host :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832134790' status='passed' stop='1629832137105'>
+                    <name>When Parent Upcoming host :: user selects filter</name>
+                    <title>When Parent Upcoming host :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832137105' status='passed' stop='1629832138323'>
+                    <name>Then Parent Upcoming host :: component only displays correct results</name>
+                    <title>Then Parent Upcoming host :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629832138327' status='passed' stop='1629832144730'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629832138327' status='passed' stop='1629832140404'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832140405' status='passed' stop='1629832140407'>
+                    <name>Given Parent Upcoming eventtype :: user is on page</name>
+                    <title>Given Parent Upcoming eventtype :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832140407' status='passed' stop='1629832143918'>
+                    <name>When Parent Upcoming eventtype :: user selects filter</name>
+                    <title>When Parent Upcoming eventtype :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832143919' status='passed' stop='1629832144729'>
+                    <name>Then Parent Upcoming eventtype :: component only displays correct results</name>
+                    <title>Then Parent Upcoming eventtype :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1629832144730' status='broken' stop='1629832146746'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629832144731' status='passed' stop='1629832146151'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832146151' status='broken' stop='1629832146745'>
+                    <name>Given Parent Previous host :: user is on page</name>
+                    <title>Given Parent Previous host :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832146746' status='canceled' stop='1629832146746'>
+                    <name>When Parent Previous host :: user selects filter</name>
+                    <title>When Parent Previous host :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832146746' status='canceled' stop='1629832146746'>
+                    <name>Then Parent Previous host :: component only displays correct results</name>
+                    <title>Then Parent Previous host :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable</message>
+                <stack-trace>element not interactable
+                  (Session info: chrome=92.0.4515.159)
+                Backtrace:
+                	Ordinal0 [0x00612A33+2501171]
+                	Ordinal0 [0x005AD1C1+2085313]
+                	Ordinal0 [0x004B1E70+1056368]
+                	Ordinal0 [0x004DD547+1234247]
+                	Ordinal0 [0x004D31B7+1192375]
+                	Ordinal0 [0x004F5653+1332819]
+                	Ordinal0 [0x004D2FD6+1191894]
+                	Ordinal0 [0x004F573A+1333050]
+                	Ordinal0 [0x005048BC+1394876]
+                	Ordinal0 [0x004F551B+1332507]
+                	Ordinal0 [0x004D1D74+1187188]
+                	Ordinal0 [0x004D2BD9+1190873]
+                	GetHandleVerifier [0x0078EFE6+1504438]
+                	GetHandleVerifier [0x0083DDA5+2220661]
+                	GetHandleVerifier [0x00695589+481881]
+                	GetHandleVerifier [0x00694639+477961]
+                	Ordinal0 [0x005B28BD+2107581]
+                	Ordinal0 [0x005B6728+2123560]
+                	Ordinal0 [0x005B6862+2123874]
+                	Ordinal0 [0x005BFA81+2161281]
+                	BaseThreadInitThunk [0x7729FA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77847A7E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77847A4E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629832146748' status='passed' stop='1629832154370'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629832146749' status='passed' stop='1629832148800'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832148800' status='passed' stop='1629832153177'>
+                    <name>Given Parent Previous eventtype :: user is on page</name>
+                    <title>Given Parent Previous eventtype :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832153177' status='passed' stop='1629832153535'>
+                    <name>When Parent Previous eventtype :: user selects filter</name>
+                    <title>When Parent Previous eventtype :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629832153535' status='passed' stop='1629832154370'>
+                    <name>Then Parent Previous eventtype :: component only displays correct results</name>
+                    <title>Then Parent Previous eventtype :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

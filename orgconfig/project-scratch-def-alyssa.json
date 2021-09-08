@@ -1,0 +1,29 @@
+{
+	"orgName": "tint",
+	"edition": "Developer",
+	"features": ["Communities", "Sites", "DebugApex"],
+	"settings": {
+		"chatterSettings": {
+			"enableChatter": true
+		},
+		"communitiesSettings": {
+			"enableNetworksEnabled": true,
+			"enableOotbProfExtUserOpsEnable": true
+		},
+        "securitySettings":{
+            "networkAccess": {
+                "ipRanges": [
+                    {"start":"35.164.0.0",
+                    "end":"35.164.255.255"},
+                    {"start":"50.92.233.80",
+                    "end":"50.92.233.80"},
+                    {"start":"104.145.4.78",
+                    "end":"104.145.4.78"}
+                ]
+            }
+        },
+        "experienceBundleSettings": {
+            "enableExperienceBundleMetadata": true
+        }
+	}
+}

@@ -61,10 +61,13 @@ USER jenkins
 #   && echo "\nSleeping 180s after org creation \n" && sleep 180s \
 #   && if [ ! -z "$TEST_PLAN_NAME" ] ; \
 #   then echo "Running test plan '$TEST_PLAN_NAME'" && npm run test:wdio:plan --plan="$TEST_PLAN_NAME" ; \
-#   else echo "Running entire test repository" && npx wdio ; \
+#   else echo "Running entire sfdx test repository" && npx wdio ; \
 #   fi \
 #   && sfdx force:org:delete -u "${ORG_ALIAS}" -p
-WORKDIR /home/jenkins/run
+
+RUN create-alyssa-test-org chives
+
+WORKDIR /home/jenkins/wdiorepo/run
 # [upon docker run] npm installs tsr-core, creates new scratch org, runs tests, & removes scratch org
 CMD npm i \
   && if [ ! -z "$TEST_PLAN_NAME" ] ; \

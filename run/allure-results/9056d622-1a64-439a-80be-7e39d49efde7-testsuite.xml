@@ -1,0 +1,149 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629924749741' stop='1629924762244'>
+    <name>Notifications</name>
+    <title>Notifications</title>
+    <test-cases>
+        <test-case start='1629924754323' status='broken' stop='1629924760490'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629924754325' status='passed' stop='1629924756488'>
+                    <name>Given live :: events are created</name>
+                    <title>Given live :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629924756488' status='passed' stop='1629924760244'>
+                    <name>When live :: user opens homepage</name>
+                    <title>When live :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629924760244' status='broken' stop='1629924760489'>
+                    <name>And live :: opens community event</name>
+                    <title>And live :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable</message>
+                <stack-trace>element not interactable
+                  (Session info: chrome=92.0.4515.159)
+                Backtrace:
+                	Ordinal0 [0x00F22A33+2501171]
+                	Ordinal0 [0x00EBD1C1+2085313]
+                	Ordinal0 [0x00DC1E70+1056368]
+                	Ordinal0 [0x00DED547+1234247]
+                	Ordinal0 [0x00DE31B7+1192375]
+                	Ordinal0 [0x00E05653+1332819]
+                	Ordinal0 [0x00DE2FD6+1191894]
+                	Ordinal0 [0x00E0573A+1333050]
+                	Ordinal0 [0x00E148BC+1394876]
+                	Ordinal0 [0x00E0551B+1332507]
+                	Ordinal0 [0x00DE1D74+1187188]
+                	Ordinal0 [0x00DE2BD9+1190873]
+                	GetHandleVerifier [0x0109EFE6+1504438]
+                	GetHandleVerifier [0x0114DDA5+2220661]
+                	GetHandleVerifier [0x00FA5589+481881]
+                	GetHandleVerifier [0x00FA4639+477961]
+                	Ordinal0 [0x00EC28BD+2107581]
+                	Ordinal0 [0x00EC6728+2123560]
+                	Ordinal0 [0x00EC6862+2123874]
+                	Ordinal0 [0x00ECFA81+2161281]
+                	BaseThreadInitThunk [0x7729FA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77847A7E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77847A4E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629924760492' status='broken' stop='1629924762242'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629924760493' status='passed' stop='1629924761283'>
+                    <name>Given recorded :: events are created</name>
+                    <title>Given recorded :: events are created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629924761284' status='passed' stop='1629924761822'>
+                    <name>When recorded :: user opens homepage</name>
+                    <title>When recorded :: user opens homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629924761822' status='broken' stop='1629924762241'>
+                    <name>And recorded :: opens community event</name>
+                    <title>And recorded :: opens community event</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable</message>
+                <stack-trace>element not interactable
+                  (Session info: chrome=92.0.4515.159)
+                Backtrace:
+                	Ordinal0 [0x00F22A33+2501171]
+                	Ordinal0 [0x00EBD1C1+2085313]
+                	Ordinal0 [0x00DC1E70+1056368]
+                	Ordinal0 [0x00DED547+1234247]
+                	Ordinal0 [0x00DE31B7+1192375]
+                	Ordinal0 [0x00E05653+1332819]
+                	Ordinal0 [0x00DE2FD6+1191894]
+                	Ordinal0 [0x00E0573A+1333050]
+                	Ordinal0 [0x00E148BC+1394876]
+                	Ordinal0 [0x00E0551B+1332507]
+                	Ordinal0 [0x00DE1D74+1187188]
+                	Ordinal0 [0x00DE2BD9+1190873]
+                	GetHandleVerifier [0x0109EFE6+1504438]
+                	GetHandleVerifier [0x0114DDA5+2220661]
+                	GetHandleVerifier [0x00FA5589+481881]
+                	GetHandleVerifier [0x00FA4639+477961]
+                	Ordinal0 [0x00EC28BD+2107581]
+                	Ordinal0 [0x00EC6728+2123560]
+                	Ordinal0 [0x00EC6862+2123874]
+                	Ordinal0 [0x00ECFA81+2161281]
+                	BaseThreadInitThunk [0x7729FA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77847A7E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77847A4E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

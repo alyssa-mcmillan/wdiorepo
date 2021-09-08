@@ -1,0 +1,153 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629779972581' stop='1629780013803'>
+    <name>Event Filters</name>
+    <title>Event Filters</title>
+    <test-cases>
+        <test-case start='1629780006028' status='broken' stop='1629780009765'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629780006038' status='passed' stop='1629780007753'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780007753' status='passed' stop='1629780007760'>
+                    <name>Given Community Upcoming eventtype :: user is on page</name>
+                    <title>Given Community Upcoming eventtype :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780007760' status='broken' stop='1629780009765'>
+                    <name>When Community Upcoming eventtype :: user selects filter</name>
+                    <title>When Community Upcoming eventtype :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780009766' status='canceled' stop='1629780009767'>
+                    <name>Then Community Upcoming eventtype :: component only displays correct results</name>
+                    <title>Then Community Upcoming eventtype :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid selector: Unable to locate an element with the xpath expression ./option[last() because of the following error:</message>
+                <stack-trace>invalid selector: Unable to locate an element with the xpath expression ./option[last() because of the following error:
+                SyntaxError: Failed to execute 'evaluate' on 'Document': The string './option[last()' is not a valid XPath expression.
+                  (Session info: chrome=92.0.4515.159)
+                Backtrace:
+                	Ordinal0 [0x00632A33+2501171]
+                	Ordinal0 [0x005CD1C1+2085313]
+                	Ordinal0 [0x004D1FA8+1056680]
+                	Ordinal0 [0x004D46D4+1066708]
+                	Ordinal0 [0x004D459E+1066398]
+                	Ordinal0 [0x004D4800+1067008]
+                	Ordinal0 [0x004FC4F8+1230072]
+                	Ordinal0 [0x004F3051+1192017]
+                	Ordinal0 [0x0051568A+1332874]
+                	Ordinal0 [0x004F2FD6+1191894]
+                	Ordinal0 [0x0051573A+1333050]
+                	Ordinal0 [0x005248BC+1394876]
+                	Ordinal0 [0x0051551B+1332507]
+                	Ordinal0 [0x004F1D74+1187188]
+                	Ordinal0 [0x004F2BD9+1190873]
+                	GetHandleVerifier [0x007AEFE6+1504438]
+                	GetHandleVerifier [0x0085DDA5+2220661]
+                	GetHandleVerifier [0x006B5589+481881]
+                	GetHandleVerifier [0x006B4639+477961]
+                	Ordinal0 [0x005D28BD+2107581]
+                	Ordinal0 [0x005D6728+2123560]
+                	Ordinal0 [0x005D6862+2123874]
+                	Ordinal0 [0x005DFA81+2161281]
+                	BaseThreadInitThunk [0x7729FA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77847A7E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77847A4E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629780009776' status='broken' stop='1629780013797'>
+            <name>check event filter functionality</name>
+            <title>check event filter functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-92.0.4515.159'/>
+            </parameters>
+            <steps>
+                <step start='1629780009779' status='passed' stop='1629780011409'>
+                    <name>Given user is logged in</name>
+                    <title>Given user is logged in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780011409' status='passed' stop='1629780011414'>
+                    <name>Given Community Upcoming host :: user is on page</name>
+                    <title>Given Community Upcoming host :: user is on page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780011414' status='broken' stop='1629780013797'>
+                    <name>When Community Upcoming host :: user selects filter</name>
+                    <title>When Community Upcoming host :: user selects filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1629780013797' status='canceled' stop='1629780013797'>
+                    <name>Then Community Upcoming host :: component only displays correct results</name>
+                    <title>Then Community Upcoming host :: component only displays correct results</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid selector: Unable to locate an element with the xpath expression ./option[last() because of the following error:</message>
+                <stack-trace>invalid selector: Unable to locate an element with the xpath expression ./option[last() because of the following error:
+                SyntaxError: Failed to execute 'evaluate' on 'Document': The string './option[last()' is not a valid XPath expression.
+                  (Session info: chrome=92.0.4515.159)
+                Backtrace:
+                	Ordinal0 [0x00632A33+2501171]
+                	Ordinal0 [0x005CD1C1+2085313]
+                	Ordinal0 [0x004D1FA8+1056680]
+                	Ordinal0 [0x004D46D4+1066708]
+                	Ordinal0 [0x004D459E+1066398]
+                	Ordinal0 [0x004D4800+1067008]
+                	Ordinal0 [0x004FC4F8+1230072]
+                	Ordinal0 [0x004F3051+1192017]
+                	Ordinal0 [0x0051568A+1332874]
+                	Ordinal0 [0x004F2FD6+1191894]
+                	Ordinal0 [0x0051573A+1333050]
+                	Ordinal0 [0x005248BC+1394876]
+                	Ordinal0 [0x0051551B+1332507]
+                	Ordinal0 [0x004F1D74+1187188]
+                	Ordinal0 [0x004F2BD9+1190873]
+                	GetHandleVerifier [0x007AEFE6+1504438]
+                	GetHandleVerifier [0x0085DDA5+2220661]
+                	GetHandleVerifier [0x006B5589+481881]
+                	GetHandleVerifier [0x006B4639+477961]
+                	Ordinal0 [0x005D28BD+2107581]
+                	Ordinal0 [0x005D6728+2123560]
+                	Ordinal0 [0x005D6862+2123874]
+                	Ordinal0 [0x005DFA81+2161281]
+                	BaseThreadInitThunk [0x7729FA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77847A7E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77847A4E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
