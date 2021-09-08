@@ -1,0 +1,24 @@
+{
+  "status": 0,
+  "result": {
+    "orgId": "00D0R000000KVj7UAG",
+    "permissionSetAssignments": [
+      "tint__Community_At_Home_User"
+    ],
+    "fields": {
+      "id": "0050R000009BIGkQAO",
+      "username": "1631117606668_test-gpz4be8higtx@example.com",
+      "alias": "userman",
+      "email": "amcmillan@tractionrec.com",
+      "emailencodingkey": "UTF-8",
+      "languagelocalekey": "en_US",
+      "localesidkey": "en_US",
+      "profileid": "00e0R000001GNruQAG",
+      "lastname": "Man",
+      "timezonesidkey": "America/Los_Angeles",
+      "firstname": "User",
+      "profilename": "Standard Platform User",
+      "generatepassword": true
+    }
+  }
+}
